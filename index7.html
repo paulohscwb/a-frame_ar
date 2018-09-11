@@ -16,10 +16,14 @@
 	  <a-entity
 		collada-model="url(http://www.degraf.ufpr.br/docentes/paulo/lightbox/imagens/book.dae)" scale="1" position="0 0.5 0">
       </a-entity>-->
+
+	  <a-assets>
+        	<a-asset-item id="model" src="imagens/book.obj"></a-asset-item>
+		<a-asset-item id="material" src="imagens/book.mtl"></a-asset-item>
+      	  </a-assets>	    
 	  
-	  
-	  <a-entity collada-model="url(./imagens/casa.dae)"; scale="0.5" position="0 0 0"></a-entity>
-  
+	  <a-entity obj-model="src: #model; mtl: #material"; scale="0.5" position="0 0 0"></a-entity>
+          <a-obj-model  src="#model" mtl="#material" scale="0.5"></a-obj-model>
 	  
     </a-marker>
 
