@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://rawgit.com/andreasplesch/aframe-faceset-component/master/dist/aframe-faceset-component.min.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+
+	  <a-assets>
+        	<a-asset-item id="model" src="imagens/CesiumMan.gltf"></a-asset-item>
+      	  </a-assets>
+	  
+    <a-marker preset='hiro'>
+
+	<!--Adding a glTF 2.0 model to your scene
+      <a-box position="0 0.5 0" material="opacity:0.7" color="red"></a-box>
+	  <a-entity
+		collada-model="url(http://www.degraf.ufpr.br/docentes/paulo/lightbox/imagens/book.dae)" scale="1" position="0 0.5 0">
+      </a-entity>-->
+
+	  
+	  <a-entity position="-5 0.3 -6" rotation="0 45 0" id="antiprisma">
+			<a-entity geometry="primitive: triangleset; vertices: 1 1.5 -0.41  2 0 0  2.41 1.5 1  2 0 2  1 1.5 2.41  0 0 2  -0.41 1.5 1  0 0 0  1 1.5 -0.41; projectdir: y" 
+				material="color: red; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 0 0 0  2 0 0  2 0 2  0 0 2; projectdir: y" 
+				material="color: yellow; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 1 1.5 -0.41  2.41 1.5 1  1 1.5 2.41  -0.41 1.5 1; projectdir: y" 
+				material="color: yellow; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 0 0 0  2 0 0  1 1.5 -0.41; projectdir: y"
+				material="color: green; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 2 0 0  2 0 2  2.41 1.5 1; projectdir: y"
+				material="color: green; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 2 0 2  0 0 2  1 1.5 2.41; projectdir: y"
+				material="color: green; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+			<a-entity geometry="primitive: triangleset; vertices: 0 0 2  0 0 0  -0.41 1.5 1; projectdir: y"
+				material="color: green; roughness: 0.1; opacity: 0.85; metalness: 0.3; side: double"></a-entity>
+		</a-entity>
+  
+	  
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
