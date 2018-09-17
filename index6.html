@@ -6,25 +6,21 @@
 	<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs='sourceType: webcam;'>
-
+<a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+	<a-assets>
+		<a-asset-item id="model" src="./imagens/CesiumMan.gltf"></a-asset-item>
+		<a-asset-item id="model1" src="./imagens/horizontal.dae"></a-asset-item>
+	</a-assets>
 		
-    <a-marker preset='hiro'>
+	<a-marker type="barcode" value="1">
+		<a-entity gltf-model="#model" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+	</a-marker>
 
-	<!--Adding a glTF 2.0 model to your scene
-      <a-box position="0 0.5 0" material="opacity:0.7" color="red"></a-box>
-	  <a-entity
-		collada-model="url(http://www.degraf.ufpr.br/docentes/paulo/lightbox/imagens/book.dae)" scale="1" position="0 0.5 0">
-      </a-entity>-->
-	  <a-assets>
-        	<a-asset-item id="model" src="/imagens/CesiumMan.gltf"></a-asset-item>
-      	  </a-assets>
-
-	  <a-entity gltf-model="#model"; scale="0.5"; position="0 0 0"></a-entity>
-  	  
-    </a-marker>
-
-    <a-entity camera></a-entity>
+	<a-marker type="barcode" value="2">
+		<a-entity collada-model="#model1" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+	</a-marker>
+	
+    	<a-entity camera></a-entity>
   </a-scene>
 </body>
 </html>
