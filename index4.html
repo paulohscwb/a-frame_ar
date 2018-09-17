@@ -19,7 +19,7 @@
 				material="color: #6E6E6E; wireframe: true; linewidth:5;"></a-entity>
 			<a-entity rotation="0 45 180" position="0 0.8 0" geometry="primitive: triangleset; vertices: 0.5 0 0.5  0.7071 0.8 0  0.5 0 -0.5  0 0.8 -0.7071  -0.5 0 -0.5  -0.7071 0.8 0  -0.5 0 0.5  0 0.8 0.7071; projectdir: y" 
 				material="color: #6E6E6E; wireframe: true; linewidth:5;"></a-entity>
-			<a-animation attribute="position" fill="forwards" direction="alternate" to="5 0 5" dur="5000" repeat="indefinite"></a-animation>
+			<a-animation attribute="rotation" fill="forwards" direction="alternate" to="0 360 0" dur="5000" repeat="indefinite"></a-animation>
 		  </a-entity> 
 	    </a-marker>
 
@@ -117,8 +117,7 @@
 				material="color: #58ACFA; roughness: 0.1; opacity: 0.6; metalness: 0.35; side: double"></a-entity>
 			<a-entity geometry="primitive: triangleset; vertices: 1.2 2.5 1.75  1.2 1 1.75  1.2 1.3 -1.75  1.2 2.5 -1.75; projectdir: x" 
 				material="color: #58ACFA; roughness: 0.1; opacity: 0.6; metalness: 0.35; side: double"></a-entity>
-				<a-animation attribute="rotation" direction="alternate"
-					dur="10000" fill="forwards" to="0 360 0" begin="click" end="mouseleave" repeat="indefinite"></a-animation>
+			<a-animation attribute="rotation" fill="forwards" direction="alternate" to="0 360 0" dur="5000" repeat="indefinite"></a-animation>
 			</a-entity>
 		</a-entity>
 	   </a-marker>
