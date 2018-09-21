@@ -195,7 +195,8 @@
 		</a-entity>
 	</a-marker>
 
-  	  	<a-entity position="5 0 0" id="pg62_piramide_quadrada" scale="0.5 0.5 0.5">
+	 <a-marker type="barcode" value="11">
+  	  	  <a-entity position="5 0 0" id="pg62_piramide_quadrada" scale="0.5 0.5 0.5">
 	  		<a-entity geometry="primitive: triangleset; vertices: 1 1 2  3 3 0  4.4 4.4 2.7  2.5 2.5 4.8  -1.1 6 2.4 ; projectdir: x" 
 				mixin="mtl0 mtl3"></a-entity>
 			<a-entity geometry="primitive: triangleset; vertices: 1 1 2  3 3 0  -1.1 6 2.4; projectdir: x" 
@@ -210,10 +211,7 @@
 				mixin="linhas"></a-entity>
 			<a-entity geometry="primitive: triangleset; vertices: 3 3 0  4.4 4.4 2.7  -1.1 6 2.4; projectdir: x" 
 				mixin="linhas"></a-entity>
-		</a-entity>	  
-	  
-	 <a-marker type="barcode" value="11">
-  	  	<a-anchor src="#pg62_piramide_quadrada"></a-anchor>
+		</a-entity>
 	 </a-marker> 
     </a-scene>
 </body>
