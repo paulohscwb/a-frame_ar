@@ -4,7 +4,6 @@
     <!--<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">-->
 	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 	<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.min.js"></script>
-	<script src="https://rawgit.com/mikebolt/aframe-plot-component/master/dist/aframe-plot-component.min.js"></script>
 	<script src="triangleset.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
@@ -97,12 +96,6 @@
 			<a-entity line="start: -2 2 1; end: 5 4 4; color: cyan" line__2="start: -4 2 1; end: 3 4 4; color: #C62545"
 				line__3="start: 0 2 1; end: 7 4 4; color: #C62545" line__4="start: -2 4 1; end: 5 6 4; color: yellow;"
 				line__5="start: -2 0 1; end: 5 2 4; color: yellow;">
-			</a-entity>
-			<a-entity plot="function: -x*2/3 + sqrt(4-(y+x*7/3)^2); order: 64; show_zero_planes: false; show_bounding_box: false; bounds: -3 0 0 3 -2 8; color: #F40;"
-				position="-2 2 1" rotation="0 90 0">
-			</a-entity>
-			<a-entity plot="function: -x*2/3 - sqrt(4-(y+x*7/3)^2); order: 64; show_zero_planes: false; show_bounding_box: false; bounds: -3 0 0 3 -2 8; color: #F40;"
-				position="-2 2 1" rotation="0 90 0">
 			</a-entity>
 		</a-entity>
 	</a-marker>
