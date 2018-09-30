@@ -25,12 +25,12 @@
 	<a-entity camera></a-entity>
 	  
 	  <a-marker type="barcode" value="30">
-		  <a-entity position="3 0 0" id="cilindro_obliquo" scale="0.5 0.5 0.5">	
-			<a-entity plot="function: y^2-x^2; order: 64; show_zero_planes: false; show_grid: true; show_bounding_box: t; bounds: -0.75 0.75 -0.75 0.75 -0.75 0.75; color: #04F;"
-				position="0.75 1 1" rotation="0 0 0" scale="1 1 1">
+		<a-entity plot="function: -x*2/3 + (max(4-(y+x*7/3)^2,0))^0.5; order: 100; show_zero_planes: false; show_bounding_box: false; bounds: -3 0 0 0 -2 8; color: #C62545;"
+			position="-2 2 1 " rotation="0 90 0">
 		</a-entity>
-		      <a-entity plot="function: e^(x+y^2)/2 - 1.02; order: 64; show_zero_planes: false; show_bounding_box: false; bounds: -0.5 0.5 -0.5 0.5 -0.5 0.5; color: yellow"
-                position="-0.75 1 2" rotation="0 0 0">
+		<a-entity plot="function: z=-x*2/3 - (max(4-(y+x*7/3)^2,0))^0.5; order: 100; show_zero_planes: false; show_bounding_box: false; bounds: -3 0 0 3 -2 9; color: #C62545;"
+			position="-2 2 1" rotation="0 90 0">
+		</a-entity>
       </a-entity>
       
       <a-entity plot="function: 0.5*e^-((x^2+y^2)*10); order: 64; show_zero_planes: true; show_bounding_box: true; bounds: -0.5 0.5 -0.5 0.5 -0.5 0.5; color: #F40;"
