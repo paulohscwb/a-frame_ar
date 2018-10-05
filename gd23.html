@@ -5,7 +5,7 @@
 	<script src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js"></script>
 	<script src="triangleset.js"></script>
 </head>
-<body style='margin : 0px; overflow: hidden;'>
+<body style='margin: 0; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; imageSmoothingEnabled:true; matrixCodeType: 3x3; debugUIEnabled: false;'>
 	<a-assets>
 		<a-mixin id="mtl0" material="opacity: 0.75; side: double; metalness:0.4; roughness:0.9;"></a-mixin>
@@ -23,6 +23,30 @@
 	
 	<a-entity camera></a-entity>
 
+	  <a-marker type="barcode" value="39">
+		  <a-entity position="-5 0 0" id="pg46_prismaObliquo" scale="0.33 0.33 0.33">	  
+			<a-entity id="ABCD" geometry="primitive: triangleset; vertices: 1 0 3  4 0 1  5.8 0 4  2.9 0 6  1 0 3; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="EFGH" geometry="primitive: triangleset; vertices: 7 3 2  10 3 0  11.8 3 3  8.9 3 5  7 3 2; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="ABFE" geometry="primitive: triangleset; vertices: 1 0 3  4 0 1  10 3 0  7 3 2; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="BCGF" geometry="primitive: triangleset; vertices: 4 0 1  5.8 0 4  11.8 3 3  10 3 0; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="CDHG" geometry="primitive: triangleset; vertices: 5.8 0 4  2.9 0 6  8.9 3 5  11.8 3 3; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="DAEH" geometry="primitive: triangleset; vertices: 2.9 0 6  1 0 3  7 3 2  8.9 3 5; projectdir: y" 
+				mixin="mtl0 mtl6"></a-entity>
+			<a-entity id="arestas" line="start: 1 0 3; end: 4 0 1; color: black" line__2="start: 4 0 1; end: 5.8 0 4; color: black"
+				line__3="start: 5.8 0 4; end: 2.9 0 6; color: black" line__4="start: 2.9 0 6; end: 1 0 3; color: black;"
+				line__5="start: 7 3 2; end: 10 3 0; color: black" line__8="start: 10 3 0; end: 11.8 3 3; color: black"
+				line__6="start: 11.8 3 3; end: 8.9 3 5; color: black" line__7="start: 8.9 3 5; end: 7 3 2; color: black;"
+				line__10="start: 1 0 3; end: 7 3 2; color: black" line__12="start: 4 0 1; end: 10 3 0; color: black"
+				line__9="start: 5.8 0 4; end: 11.8 3 3; color: black" line__11="start: 2.9 0 6; end: 8.9 3 5; color: black;">
+			</a-entity>
+		</a-entity>
+	  </a-marker>
+	  
 	  <a-marker type="barcode" value="38">
 		  <a-entity position="-5 0 0" id="pg45_prismaTriangular" scale="0.33 0.33 0.33">	  
 	  		<a-entity id="ABC" geometry="primitive: triangleset; vertices: 1 1 1  5.8 1 2.3  2.4 1 5.7; projectdir: y" 
