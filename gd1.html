@@ -4,7 +4,6 @@
 	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 	<script src="faceset.js"></script>
-	<script src="triangleset.js"></script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; imageSmoothingEnabled:true; matrixCodeType: 3x3; debugUIEnabled: false;'>
@@ -26,49 +25,38 @@
 	  
 	  <a-marker type="barcode" value="22">
 	    	 <a-entity position="-4 0 0" id="pg48_icosaedro_alturas" scale="0.33 0.33 0.33">
-	  		<a-entity id="ABK-KAE" geometry="primitive: triangleset; vertices: 2 3 4  5 3 2  4.9 1.5 5  2 3 4  2.9 3 7.5  4.9 1.5 5; projectdir: y" 
+	  		<a-entity id="ABCDE-K" faceset="vertices: 2 3 4  5 3 2  2.9 3 7.5  6.5 3 7.5  7.9 3 4.3  4.9 1.5 5;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="DEK-DCK" geometry="primitive: triangleset; vertices: 6.5 3 7.5  2.9 3 7.5  4.9 1.5 5  6.5 3 7.5  7.9 3 4.3  4.9 1.5 5; projectdir: y" 
+			<a-entity id="ABCDE-K" faceset="vertices: 2 3 4  5 3 2  2.9 3 7.5  6.5 3 7.5  7.9 3 4.3  4.9 1.5 5;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="ABF-AJF" faceset="vertices: 2 3 4  5 3 2  3.2 6 2.5  2 3 4  1.8 6 5.9  3.2 6 2.5; projectdir:z" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="BCK" geometry="primitive: triangleset; vertices: 5 3 2  7.9 3 4.3  4.9 1.5 5; projectdir: y" 
+			<a-entity id="ABF-AJF" faceset="vertices: 2 3 4  5 3 2  3.2 6 2.5  2 3 4  1.8 6 5.9  3.2 6 2.5; projectdir:z" 
+				mixin="linhas"></a-entity>
+			<a-entity id="EAJ-EIJ" faceset="vertices: 2.9 3 7.5  2 3 4  1.8 6 5.9  2.9 3 7.5  4.7 6 8.1  1.8 6 5.9;" 
+				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="EAJ-EIJ" faceset="vertices: 2.9 3 7.5  2 3 4  1.8 6 5.9  2.9 3 7.5  4.7 6 8.1  1.8 6 5.9;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="DEI-DHI" faceset="vertices: 6.5 3 7.5  2.9 3 7.5  4.7 6 8.1  6.5 3 7.5  7.7 6 6.3  4.7 6 8.1;" 
+				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="DEI-DHI" faceset="vertices: 6.5 3 7.5  2.9 3 7.5  4.7 6 8.1  6.5 3 7.5  7.7 6 6.3  4.7 6 8.1;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="CDH-CGH" faceset="vertices: 7.9 3 4.3  6.5 3 7.5  7.7 6 6.3  7.9 3 4.3  6.8 6 2.6  7.7 6 6.3;" 
+				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="CDH-CGH" faceset="vertices: 7.9 3 4.3  6.5 3 7.5  7.7 6 6.3  7.9 3 4.3  6.8 6 2.6  7.7 6 6.3;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="BCG-BFG" faceset="vertices: 5 3 2  7.9 3 4.3  6.8 6 2.6  5 3 2  3.2 6 2.5  6.8 6 2.6;" 
+				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="BCG-BFG" faceset="vertices: 5 3 2  7.9 3 4.3  6.8 6 2.6  5 3 2  3.2 6 2.5  6.8 6 2.6;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="FGHIJ-L" faceset="vertices: 6.8 6 2.6  3.2 6 2.5  1.8 6 5.9  4.7 6 8.1  7.7 6 6.3  4.9 7.6 5;" 
 				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="ABF-AJF" geometry="primitive: triangleset; vertices: 2 3 4  5 3 2  3.2 6 2.5  2 3 4  1.8 6 5.9  3.2 6 2.5; projectdir: z" 
-				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="EAJ-EIJ" geometry="primitive: triangleset; vertices: 2.9 3 7.5  2 3 4  1.8 6 5.9  2.9 3 7.5  4.7 6 8.1  1.8 6 5.9; projectdir: z" 
-				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="DEI-DHI" geometry="primitive: triangleset; vertices: 6.5 3 7.5  2.9 3 7.5  4.7 6 8.1  6.5 3 7.5  7.7 6 6.3  4.7 6 8.1; projectdir: z" 
-				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="CDH-CGH" geometry="primitive: triangleset; vertices: 7.9 3 4.3  6.5 3 7.5  7.7 6 6.3  7.9 3 4.3  6.8 6 2.6  7.7 6 6.3; projectdir: x" 
-				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="BCG-BFG" geometry="primitive: triangleset; vertices: 5 3 2  7.9 3 4.3  6.8 6 2.6  5 3 2  3.2 6 2.5  6.8 6 2.6; projectdir: x" 
-				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="GFL-FJL" geometry="primitive: triangleset; vertices: 6.8 6 2.6  3.2 6 2.5  4.9 7.6 5  6.8 6 2.6  1.8 6 5.9  4.9 7.6 5; projectdir: y" 
-				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="JIL-IHL" geometry="primitive: triangleset; vertices: 1.8 6 5.9  4.7 6 8.1  4.9 7.6 5  1.8 6 5.9  7.7 6 6.3  4.9 7.6 5; projectdir: y" 
-				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="HGL" geometry="primitive: triangleset; vertices: 7.7 6 6.3  6.8 6 2.6  4.9 7.6 5; projectdir: y" 
-				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="FGHIJ-L" faceset="vertices: 6.8 6 2.6  3.2 6 2.5  1.8 6 5.9  4.7 6 8.1  7.7 6 6.3  4.9 7.6 5;" 
+				mixin="linhas"></a-entity>
 			<a-entity id="h1_JE" line="start: 1.8 6 5.9; end: 1.8 3 5.9; color: red" line__2="start: 1.8 3 5.9; end: 2.9 3 7.5; color: grey"></a-entity>
 			<a-entity id="h2_LH" line="start: 4.9 7.6 5; end: 4.9 6 5; color: red" line__2="start: 4.9 6 5; end: 7.7 6 6.3; color: grey"></a-entity>
-			 <a-entity id="arestas" line="start: 2 3 4; end: 5 3 2; color: black" line__2="start: 5 3 2; end: 7.9 3 4.3; color: black"
-				line__3="start: 7.9 3 4.3; end: 6.5 3 7.5; color: black" line__4="start: 6.5 3 7.5; end: 2.9 3 7.5; color: black;"
-				line__5="start: 2 3 4; end: 2.9 3 7.5; color: black" line__8="start: 3.2 6 2.5; end: 6.8 6 2.6; color: black"
-				line__6="start: 6.8 6 2.6; end: 7.7 6 6.3; color: black" line__7="start: 7.7 6 6.3; end: 4.7 6 8.1; color: black;"
-				line__10="start: 4.7 6 8.1; end: 1.8 6 5.9; color: black" line__12="start: 3.2 6 2.5; end: 1.8 6 5.9; color: black"
-				line__13="start: 4.9 1.5 5; end: 2 3 4; color: black" line__18="start: 4.9 1.5 5; end: 5 3 2; color: black;"
-				line__14="start: 4.9 1.5 5; end: 7.9 3 4.3; color: black" line__17="start: 4.9 1.5 5; end: 6.5 3 7.5; color: black"
-				line__15="start: 4.9 1.5 5; end: 2.9 3 7.5; color: black" line__9="start: 4.9 7.6 5; end: 3.2 6 2.5; color: black"
-				line__11="start: 4.9 7.6 5; end: 6.8 6 2.6; color: black" line__16="start: 4.9 7.6 5; end: 7.7 6 6.3; color: black"
-				line__19="start: 4.9 7.6 5; end: 4.7 6 8.1; color: black" line__20="start: 4.9 7.6 5; end: 1.8 6 5.9; color: black"
-				line__21="start: 2 3 4; end: 3.2 6 2.5; color: black" line__26="start: 2 3 4; end: 1.8 6 5.9; color: black;"
-				line__22="start: 5 3 2; end: 3.2 6 2.5; color: black" line__27="start: 5 3 2; end: 6.8 6 2.6; color: black"
-				line__23="start: 7.9 3 4.3; end: 6.8 6 2.6; color: black" line__28="start: 7.9 3 4.3; end: 7.7 6 6.3; color: black"
-				line__24="start: 6.5 3 7.5; end: 7.7 6 6.3; color: black" line__29="start: 6.5 3 7.5; end: 4.7 6 8.1; color: black"
-				line__25="start: 2.9 3 7.5; end: 4.7 6 8.1; color: black" line__30="start: 2.9 3 7.5; end: 1.8 6 5.9; color: black">
-			</a-entity>
 		</a-entity>
 	</a-marker>	  
-	  
 	  
 	  <a-marker type="barcode" value="42">
 		  <a-entity position="-4 0 0" id="pg47_octaedro1" scale="0.33 0.33 0.33">
@@ -367,21 +355,21 @@
 	  
 	  <a-marker type="barcode" value="25">
 		  <a-entity position="4.5 0 0" id="pg78_prisma_hexagonal" scale="0.5 0.5 0.5">	  
-	  		<a-entity id="ABCDEF" geometry="primitive: triangleset; vertices: 1 4 4  2 2 5  4.3 1.8 5.2  5.8 3.3 4.2  4.9 5.4 3.3  2.5 5.5 3.1; projectdir: y" 
+	  		<<a-entity id="ABCDEF" faceset="vertices: 1 4 4  2 2 5  4.3 1.8 5.2  5.8 3.3 4.2  4.9 5.4 3.3  2.5 5.5 3.1;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="GHIJKL" geometry="primitive: triangleset; vertices: 1 2.5 1.3  2 0.5 2.2  4.3 0.3 2.5  5.8 1.9 1.6  4.9 3.9 0.6  2.5 4.1 0.5; projectdir: y" 
+			<a-entity id="GHIJKL" faceset="vertices: 1 2.5 1.3  2 0.5 2.2  4.3 0.3 2.5  5.8 1.9 1.6  4.9 3.9 0.6  2.5 4.1 0.5;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="ABHG" geometry="primitive: triangleset; vertices: 1 4 4  2 2 5  2 0.5 2.2  1 2.5 1.3; projectdir: y" 
+			<a-entity id="ABHG" faceset="vertices: 1 4 4  2 2 5  2 0.5 2.2  1 2.5 1.3;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="BCIH" geometry="primitive: triangleset; vertices: 2 2 5  4.3 1.8 5.2  4.3 0.3 2.5 2 0.5 2.2; projectdir: y" 
+			<a-entity id="BCIH" faceset="vertices: 2 2 5  4.3 1.8 5.2  4.3 0.3 2.5 2 0.5 2.2;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="CDJI" geometry="primitive: triangleset; vertices: 4.3 1.8 5.2  5.8 3.3 4.2  5.8 1.9 1.6  4.3 0.3 2.5; projectdir: y" 
+			<a-entity id="CDJI" faceset="vertices: 4.3 1.8 5.2  5.8 3.3 4.2  5.8 1.9 1.6  4.3 0.3 2.5;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="DEKJ" geometry="primitive: triangleset; vertices: 5.8 3.3 4.2  4.9 5.4 3.3  4.9 3.9 0.6  5.8 1.9 1.6; projectdir: y" 
+			<a-entity id="DEKJ" faceset="vertices: 5.8 3.3 4.2  4.9 5.4 3.3  4.9 3.9 0.6  5.8 1.9 1.6;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="EFLK" geometry="primitive: triangleset; vertices: 4.9 5.4 3.3  2.5 5.5 3.1  2.5 4.1 0.5  4.9 3.9 0.6; projectdir: y" 
+			<a-entity id="EFLK" faceset="vertices: 4.9 5.4 3.3  2.5 5.5 3.1  2.5 4.1 0.5  4.9 3.9 0.6;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="FAGL" geometry="primitive: triangleset; vertices: 2.5 5.5 3.1  1 4 4  1 2.5 1.3  2.5 4.1 0.5; projectdir: y" 
+			<a-entity id="FAGL" faceset="vertices: 2.5 5.5 3.1  1 4 4  1 2.5 1.3  2.5 4.1 0.5;" 
 				mixin="mtl0 mtl1"></a-entity>
 			<a-entity id="arestas" line="start: 1 4 4; end: 2 2 5; color: black" line__2="start: 2 2 5; end: 4.3 1.8 5.2; color: black"
 				line__3="start: 4.3 1.8 5.2; end: 5.8 3.3 4.2; color: black" line__4="start: 5.8 3.3 4.2; end: 4.9 5.4 3.3; color: black;"
@@ -398,17 +386,17 @@
 	  
 	  <a-marker type="barcode" value="24">
 	    	 <a-entity position="4.5 0 0" id="pg77_cubo" scale="0.5 0.5 0.5">
-	  		<a-entity id="ABCD" geometry="primitive: triangleset; vertices: 2.3 3.2 1.9  5.1 1.2 3.1  7.5 3.6 1.7  4.8 5.5 0.5; projectdir: y" 
+	  		<a-entity id="ABCD" faceset="vertices: 2.3 3.2 1.9  5.1 1.2 3.1  7.5 3.6 1.7  4.8 5.5 0.5;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="EFGH" geometry="primitive: triangleset; vertices: 2.3 5.2 5  5.1 3.2 6.2  7.5 5.6 4.8  4.8 7.5 3.6; projectdir: y" 
+			<a-entity id="EFGH" faceset="vertices: 2.3 5.2 5  5.1 3.2 6.2  7.5 5.6 4.8  4.8 7.5 3.6;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="ABFE" geometry="primitive: triangleset; vertices: 2.3 3.2 1.9  5.1 1.2 3.1  5.1 3.2 6.2  2.3 5.2 5; projectdir: y" 
+			<a-entity id="ABFE" faceset="vertices: 2.3 3.2 1.9  5.1 1.2 3.1  5.1 3.2 6.2  2.3 5.2 5;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="ADHE" geometry="primitive: triangleset; vertices: 2.3 3.2 1.9  4.8 5.5 0.5  4.8 7.5 3.6  2.3 5.2 5; projectdir: y" 
+			<a-entity id="ADHE" faceset="vertices: 2.3 3.2 1.9  4.8 5.5 0.5  4.8 7.5 3.6  2.3 5.2 5;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="DHGC" geometry="primitive: triangleset; vertices: 4.8 5.5 0.5  4.8 7.5 3.6  7.5 5.6 4.8  7.5 3.6 1.7; projectdir: y" 
+			<a-entity id="DHGC" faceset="vertices: 4.8 5.5 0.5  4.8 7.5 3.6  7.5 5.6 4.8  7.5 3.6 1.7;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="GCBF" geometry="primitive: triangleset; vertices: 7.5 5.6 4.8  7.5 3.6 1.7  5.1 1.2 3.1  5.1 3.2 6.2; projectdir: y" 
+			<a-entity id="GCBF" faceset="vertices: 7.5 5.6 4.8  7.5 3.6 1.7  5.1 1.2 3.1  5.1 3.2 6.2;" 
 				mixin="mtl0 mtl2"></a-entity>
 			<a-entity id="arestas" line="start: 2.3 3.2 1.9; end: 5.1 1.2 3.1; color: black" line__2="start: 5.1 1.2 3.1; end: 7.5 3.6 1.7; color: black"
 				line__3="start: 7.5 3.6 1.7; end: 4.8 5.5 0.5; color: black" line__4="start: 4.8 5.5 0.5; end: 2.3 3.2 1.9; color: black;"
@@ -431,29 +419,29 @@
 	
 	  <a-marker type="barcode" value="21">
 	    	 <a-entity position="-8 0 0" id="pg91_dodecaedro_alturas" scale="0.5 0.5 0.5">		  
-		  	<a-entity id="ABCDE" geometry="primitive: triangleset; vertices: 6 2.5 2.5  7.5 2.5 5.7  4.9 2.5 8.2  1.7 2.5 6.5  2.3 2.5 2.9; projectdir: y" 
+		  	<a-entity id="ABCDE" faceset="vertices: 6 2.5 2.5  7.5 2.5 5.7  4.9 2.5 8.2  1.7 2.5 6.5  2.3 2.5 2.9;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="QRSTU" geometry="primitive: triangleset; vertices: 7.3 10.7 3.8  6.6 10.7 7.4  2.9 10.7 7.8  1.4 10.7 4.6  4.1 10.7 2.1; projectdir: y" 
+			<a-entity id="QRSTU" faceset="vertices: 7.3 10.7 3.8  6.6 10.7 7.4  2.9 10.7 7.8  1.4 10.7 4.6  4.1 10.7 2.1;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="ABHGF" geometry="primitive: triangleset; vertices: 6 2.5 2.5  7.5 2.5 5.7  9.3 5.7 6.1  9 7.6 3  6.9 5.7 0.8; projectdir: y" 
+			<a-entity id="ABHGF" faceset="vertices: 6 2.5 2.5  7.5 2.5 5.7  9.3 5.7 6.1  9 7.6 3  6.9 5.7 0.8;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="BCJIH" geometry="primitive: triangleset; vertices: 7.5 2.5 5.7  4.9 2.5 8.2  5.1 5.7 10.1  7.8 7.6 8.8  9.3 5.7 6.1; projectdir: y" 
+			<a-entity id="BCJIH" faceset="vertices: 7.5 2.5 5.7  4.9 2.5 8.2  5.1 5.7 10.1  7.8 7.6 8.8  9.3 5.7 6.1;" 
 				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="CDLKJ" geometry="primitive: triangleset; vertices: 4.9 2.5 8.2  1.7 2.5 6.5  0 5.7 7.2  2 7.6 9.4  5.1 5.7 10.1; projectdir: y" 
+			<a-entity id="CDLKJ" faceset="vertices: 4.9 2.5 8.2  1.7 2.5 6.5  0 5.7 7.2  2 7.6 9.4  5.1 5.7 10.1;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="DENML" geometry="primitive: triangleset; vertices: 1.7 2.5 6.5  2.3 2.5 2.9  1.1 5.7 1.5  -0.4 7.6 4.2  0 5.7 7.2; projectdir: y" 
+			<a-entity id="DENML" faceset="vertices: 1.7 2.5 6.5  2.3 2.5 2.9  1.1 5.7 1.5  -0.4 7.6 4.2  0 5.7 7.2;" 
 				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="EAFPN" geometry="primitive: triangleset; vertices: 2.3 2.5 2.9  6 2.5 2.5  6.9 5.7 0.8  3.9 7.6 0.3  1.1 5.7 1.5; projectdir: y" 
+			<a-entity id="EAFPN" faceset="vertices: 2.3 2.5 2.9  6 2.5 2.5  6.9 5.7 0.8  3.9 7.6 0.3  1.1 5.7 1.5;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="QRIHG" geometry="primitive: triangleset; vertices: 7.3 10.7 3.8  6.6 10.7 7.4  7.8 7.6 8.8  9.3 5.7 6.1  9 7.6 3; projectdir: y" 
+			<a-entity id="QRIHG" faceset="vertices: 7.3 10.7 3.8  6.6 10.7 7.4  7.8 7.6 8.8  9.3 5.7 6.1  9 7.6 3;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="RSKJI" geometry="primitive: triangleset; vertices: 6.6 10.7 7.4  2.9 10.7 7.8  2 7.6 9.4  5.1 5.7 10.1  7.8 7.6 8.8; projectdir: y" 
+			<a-entity id="RSKJI" faceset="vertices: 6.6 10.7 7.4  2.9 10.7 7.8  2 7.6 9.4  5.1 5.7 10.1  7.8 7.6 8.8;" 
 				mixin="mtl0 mtl3"></a-entity>
-			<a-entity id="STMLK" geometry="primitive: triangleset; vertices: 2.9 10.7 7.8  1.4 10.7 4.6  -0.4 7.6 4.2  0 5.7 7.2  2 7.6 9.4; projectdir: y" 
+			<a-entity id="STMLK" faceset="vertices: 2.9 10.7 7.8  1.4 10.7 4.6  -0.4 7.6 4.2  0 5.7 7.2  2 7.6 9.4;" 
 				mixin="mtl0 mtl1"></a-entity>
-			<a-entity id="TUPNM" geometry="primitive: triangleset; vertices: 1.4 10.7 4.6  4.1 10.7 2.1  3.9 7.6 0.3  1.1 5.7 1.5  -0.4 7.6 4.2; projectdir: y" 
+			<a-entity id="TUPNM" faceset="vertices: 1.4 10.7 4.6  4.1 10.7 2.1  3.9 7.6 0.3  1.1 5.7 1.5  -0.4 7.6 4.2;" 
 				mixin="mtl0 mtl2"></a-entity>
-			<a-entity id="UQGFP" geometry="primitive: triangleset; vertices: 4.1 10.7 2.1  7.3 10.7 3.8  9 7.6 3  6.9 5.7 0.8  3.9 7.6 0.3; projectdir: y" 
+			<a-entity id="UQGFP" faceset="vertices: 4.1 10.7 2.1  7.3 10.7 3.8  9 7.6 3  6.9 5.7 0.8  3.9 7.6 0.3;" 
 				mixin="mtl0 mtl3"></a-entity>
 			<a-entity id="h1_HB" line="start: 9.3 5.7 6.1; end: 9.3 2.7 6.1; color: magenta" line__2="start: 9.3 2.7 6.1; end: 7.5 2.5 5.7; color: white"></a-entity>
 			<a-entity id="h2_LM" line="start: 2 7.6 9.4; end: 2 5.7 9.4; color: magenta" line__2="start: 2 5.7 9.4; end: 0 5.7 7.2; color: white"></a-entity>
