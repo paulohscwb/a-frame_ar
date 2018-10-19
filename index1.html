@@ -17,8 +17,8 @@
 		<a-asset-item id="model3" src="./imagens/TESF.dae"></a-asset-item>
 		<a-asset-item id="model5" src="./imagens/3DMasjidNTT.dae"></a-asset-item>-->
 		<a-asset-item id="model2" src="./imagens/torres.dae"></a-asset-item>
-		<a-asset-item id="model42" src="./imagens/QuartoIsa/QuartoIsa.mtl"></a-asset-item>
-		<a-asset-item id="model42" src="./imagens/QuartoIsa/QuartoIsa.obj"></a-asset-item>
+		<a-asset-item id="#mat" src="./imagens/QuartoIsa/QuartoIsa.mtl"></a-asset-item>
+		<a-asset-item id="#ob" src="./imagens/QuartoIsa/QuartoIsa.obj"></a-asset-item>
 		<!--<a-asset-item id="model4" src="./imagens/QuartoIsa/untitled.dae"></a-asset-item>
 		<a-asset-item id="model41" src="./imagens/QuartoIsa.dae"></a-asset-item>
 		<a-asset-item id="quartobj" src="./imagens/QuartoIsa/QuartoIsa.obj"></a-asset-item>
@@ -57,8 +57,7 @@
 	<a-marker type="barcode" value="4">
 		<!--<a-entity collada-model="#model41" position="0 0 0" scale="1 1 1"></a-entity>
 		<a-entity collada-model="#model41" position="0 0 0" scale="1 1 1"></a-entity>-->
-		<a-entity obj-model="obj: url(/imagens/QuartoIsa/QuartoIsa.obj); 
-				     mtl: url(/imagens/QuartoIsa/QuartoIsa.mtl)"></a-entity>
+		<a-entity obj-model="obj: #ob; mtl: #mat"></a-entity>
 	</a-marker>
 
 
