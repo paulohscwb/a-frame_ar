@@ -54,10 +54,13 @@
 	
 	<a-marker type="barcode" value="4">
 		<a-entity collada-model="#model4" position="0 0 0" scale="2 2 2"></a-entity>
-		<a-entity light="type: ambient; color: #BBB"></a-entity>
 		<!--<a-entity obj-model="obj: #quartobj; mtl: #quartomtl"></a-entity>-->
 	</a-marker>
-	
+
+	<a-entity light="type: ambient; color: #CCC"></a-entity>
+	<a-light type="directional" position="0 0 0" rotation="-90 0 0" target="#directionaltarget">
+		<a-entity id="directionaltarget" position="0 0 -1"></a-entity>
+	</a-light>
   </a-scene>
 </body>
 </html>
