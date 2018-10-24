@@ -16,8 +16,11 @@
 		<a-asset-item id="modelzu2" src="./imagens/SOLIDO-VISTA-AUXILIAR1.dae"></a-asset-item>
 	</a-assets>
 		
-	<a-marker type="barcode" value="0" cursor=">
+	<a-marker type="barcode" value="0">
 		<a-entity collada-model="#modelzu1" scale="20 20 20" position="0 3 0"></a-entity>
+		<a-text value="Hello, A-Frame!" color="yellow" position="0 3 0" scale="0 0 0">
+			<a-animation attribute="scale" begin="click" dur="200" to="2 2 2"></a-animation>
+		</a-text>
 		<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
 			<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - test-runner for a-frame
 		</div>
