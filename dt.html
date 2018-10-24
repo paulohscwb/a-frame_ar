@@ -8,7 +8,9 @@
 <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
     	
 	<a-entity camera></a-entity>
-											  
+	<a-light type="ambient" color="white" intensity="1"></a-light>
+	<a-light type="spot" intensity="0.8" position="1 4 1" angle="180" color="#eaeaea"></a-light>
+	
 	<a-assets>
 		<a-asset-item id="modelzu1" src="./imagens/SOLIDO-VISTA-AUXILIAR0.dae"></a-asset-item>
 		<a-asset-item id="modelzu2" src="./imagens/SOLIDO-VISTA-AUXILIAR1.dae"></a-asset-item>
@@ -22,8 +24,6 @@
 		<a-entity collada-model="#modelzu2" scale="2 2 2" position="0 3 0"></a-entity>
 	</a-marker>
 
-
-	<a-light type="ambient" color="#eaeaea"></a-light>
   </a-scene>
 </body>
 </html>
