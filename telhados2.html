@@ -2,10 +2,10 @@
 <html>
 <head>
 	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
-<a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
 	<!--<a-light type="ambient" color="white" intensity="1"></a-light>
 	<a-light type="spot" intensity="0.8" position="1 4 1" angle="180" color="#eaeaea"></a-light>-->
@@ -19,61 +19,61 @@
     		<a-asset-item id="casa36" src="./imagens/36materialsketch.dae"></a-asset-item>
 	</a-assets>
 	
-	<!--<a-entity camera cursor="rayOrigin:mouse"></a-entity>-->
+	<a-entity camera cursor="rayOrigin:mouse"></a-entity>
 	
-	<a-marker-camera type="barcode" value="0">
+	<a-marker type="barcode" value="0">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa30"><a-entity collada-model="#casa31"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane;" material="color: grey" position="3 0 0" rotation="-90 0 0"
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a30.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a30.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
 	
-	<a-marker-camera type="barcode" value="1">
+	<a-marker type="barcode" value="1">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa30"><a-entity collada-model="#casa30"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane;" material="color: grey" position="3 0 0" rotation="-90 0 0"
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a30.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a30.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
 	
-	<a-marker-camera type="barcode" value="5">
+	<a-marker type="barcode" value="5">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa33"><a-entity collada-model="#casa33"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane; " material="color: grey" position="3 0 0" rotation="-90 0 0"
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a33.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a33.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
 
-	<a-marker-camera type="barcode" value="2">
+	<a-marker type="barcode" value="2">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa34"><a-entity collada-model="#casa34"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane; " material="color: grey" position="3 0 0" rotation="-90 0 0" 
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a34.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a34.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
 	
-	<a-marker-camera type="barcode" value="3">
+	<a-marker type="barcode" value="3">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa35"><a-entity collada-model="#casa35"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane; " material="color: grey" position="3 0 0" rotation="-90 0 0"
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a35.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a35.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
 
-	<a-marker-camera type="barcode" value="4">
+	<a-marker type="barcode" value="4">
 		<a-entity 
 			  scale="0.4 0.4 0.4" position="0 0.2 0" id="casa36"><a-entity collada-model="#casa36"></a-entity>
 		</a-entity>
 		<a-entity geometry="primitive: plane; " material="color: grey" position="3 0 0"  rotation="-90 0 0"
 			  onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a36.html'"></a-entity>
 		<!--<a-entity rotation="-90 0 0" position="2 0 0" scale="0.75 0.75 0.75" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/a36.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
-	</a-marker-camera>
+	</a-marker>
   
   </a-scene>
 </body>
