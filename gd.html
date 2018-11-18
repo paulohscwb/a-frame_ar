@@ -137,8 +137,14 @@
 	<a-marker type="barcode" value="0">
 		<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a0.html'" 
 			  position="-6 0 0" id="pg53_cilindro_obliquo" scale="0.5 0.5 0.5">
-			<a-circle position="-2 2 1" mixin="mtl0 mtl5" radius="2"></a-circle>
-			<a-circle position="5 4 4" mixin="mtl0 mtl4" radius="2"></a-circle>
+			<a-entity plot="function: (y-1)*2/3+sqrt(4-(x+(1-y)*7/3)^2); order: 257; show_zero_planes: false; show_bounding_box: false; 
+				bounds: -4 10 0 0 1 4; color: #58ACFA;" position="-2 2 0">
+			</a-entity>
+			<a-entity plot="function: (y-1)*2/3-sqrt(4-(x+(1-y)*7/3)^2); order: 257; show_zero_planes: false; show_bounding_box: false; 
+				bounds: -4 10 0 0 1 4; color: #58ACFA;" position="-2 2 0">
+			</a-entity>
+			<a-circle position="-2 2 1" mixin="mtl0 mtl6" radius="2"></a-circle>
+			<a-circle position="5 4 4" mixin="mtl0 mtl6" radius="2"></a-circle>
 			<a-entity line="start: -2 2 1; end: 5 4 4; color: cyan" line__2="start: -4 2 1; end: 3 4 4; color: #C62545"
 				line__3="start: 0 2 1; end: 7 4 4; color: #C62545" line__4="start: -2 4 1; end: 5 6 4; color: yellow;"
 				line__5="start: -2 0 1; end: 5 2 4; color: yellow;">
