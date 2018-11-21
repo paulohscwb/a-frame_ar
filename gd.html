@@ -13,7 +13,7 @@
 	</script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
-  <a-scene emitevents="true" cursor="rayOrigin: mouse" embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+  <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 	<a-assets>
 		<a-mixin id="mtl0" material="opacity: 0.7; side: double; metalness:0.3; roughness:0.9;"></a-mixin>
 		<a-mixin id="mtl1" material="color: #4b97ee;"></a-mixin>
@@ -33,7 +33,7 @@
 	<!--<a-light type="ambient" color="white" intensity="1"></a-light>
 	<a-light type="spot" intensity="0.8" position="1 4 1" angle="180" color="#eaeaea"></a-light>-->
 	  
-	<a-marker type="barcode" value="53">
+	<a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" type="barcode" value="53">
 	   <a-entity onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"
 		     position="0 0 0" id="teste_curva" scale="1 1 1">
 			<a-entity id="eixos">
