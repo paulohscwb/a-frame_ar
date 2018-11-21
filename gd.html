@@ -6,11 +6,6 @@
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
 	<script src="faceset.js"></script>
 	<script src="aframe-plot-component.min.js"></script>
-	<script>
-		function abrir(x) {
-		    location.href = x;
-		}
-	</script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
@@ -32,11 +27,15 @@
 	  
 	<!--<a-light type="ambient" color="white" intensity="1"></a-light>
 	<a-light type="spot" intensity="0.8" position="1 4 1" angle="180" color="#eaeaea"></a-light>
+	<script>
+		function abrir(x) {
+		    location.href = x;
+		}
+	</script>
 onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"-->
 	  
 	<a-marker type="barcode" value="53">
-	   <a-entity 
-		     position="3 0.5 0" id="teste_curva" scale="1 1 1">
+	   <a-entity position="2 0.5 0" id="teste_curva" scale="1 1 1">
 			<a-entity id="eixos">
 				<a-text position="0.02 -0.08 0" value="O" width="3" side="double" color="black"></a-text>
 				<a-cylinder rotation="0 0 0" radius="0.005" height="2" color="rgb(0,255,0)"></a-cylinder>
@@ -50,12 +49,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			bounds: -1 1 -1 1 -1 1; color: #81DAF5;">
 		</a-entity>
            </a-entity>
-	   <a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
+	   <a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
       	</a-marker>
 	  
 	 <a-marker type="barcode" value="2">
-	   <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a2.html'" 
-		     position="3.5 0 0" id="pg50_piramide_dupla" scale="0.5 0.5 0.5">
+	   <a-entity position="3.5 0 0" id="pg50_piramide_dupla" scale="0.5 0.5 0.5">
 		<a-entity faceset="vertices: -1.7 3.7 5  1 3 3  -1 1 3  -1.7 3.7 5  1 3 3  -3.7 1.7 3  -1.7 3.7 5  -3.7 1.7 3  -4.5 4.5 3  -1.7 3.7 5  -4.5 4.5 3  -2.3 6.4 3  -1.7 3.7 5  -2.3 6.4 3  0.4 5.8 3;" 
 			mixin="mtl0 mtl5"></a-entity>
 		<a-entity faceset="vertices: -1.7 3.7 1  1 3 3  -1 1 3  -1.7 3.7 1  1 3 3  -3.7 1.7 3  -1.7 3.7 1  -3.7 1.7 3  -4.5 4.5 3  -1.7 3.7 1  -4.5 4.5 3  -2.3 6.4 3  -1.7 3.7 1  -2.3 6.4 3  0.4 5.8 3;" 
@@ -73,12 +71,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 		<a-text position="-1.9 3.7 0.8" value="G" width="11" color="black" side="double"></a-text>
 		<a-text position="-1.7 3.7 5" value="H" width="11" color="black" side="double"></a-text>   
            </a-entity>
-	   <!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a2.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
+	   <a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a2.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
       	</a-marker>
       	
 	<a-marker type="barcode" value="3">
-	  <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a3.html'" 
-		    position="1.5 0 0" id="pg51_piramide_reta" scale="0.5 0.5 0.5">
+	  <a-entity position="1.5 0 0" id="pg51_piramide_reta" scale="0.5 0.5 0.5">
 		<a-entity faceset="vertices: 1 3 0  3 1 0  3.8 3.8 5  3 1 0  5.7 1.8 0  3.8 3.8 5  5.7 1.8 0  6.5 4.5 0  3.8 3.8 5  6.5 4.5 0  4.5 6.5 0  3.8 3.8 5  4.5 6.5 0  1.7 5.8 0  3.8 3.8 5  1 3 0;" 
 			mixin="mtl0 mtl3"></a-entity>
 		<a-entity faceset="vertices: 1 3 0  3 1 0  3.8 3.8 5  3 1 0  5.7 1.8 0  3.8 3.8 5  5.7 1.8 0  6.5 4.5 0  3.8 3.8 5  6.5 4.5 0  4.5 6.5 0  3.8 3.8 5  4.5 6.5 0  1.7 5.8 0  3.8 3.8 5  1 3 0;" 
@@ -91,12 +88,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 		<a-text position="1.3 5.8 0" value="F" width="11" color="black" side="double"></a-text>
 		<a-text position="4 3.8 5" value="V" width="11" color="black" side="double"></a-text>
 	  </a-entity>
-	  <!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a3.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
+	  <a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a3.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	<a-marker type="barcode" value="5">
-	   <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a5.html'" 
-		     position="1.5 0 0" id="pg51_prisma_pentagonal" scale="0.5 0.5 0.5">
+	   <a-entity position="1.5 0 0" id="pg51_prisma_pentagonal" scale="0.5 0.5 0.5">
 		<a-entity faceset="vertices: 2 0 1  5 2 1  4 5.4 1  0.5 5.5 1  -0.8 2 1;" 
 			mixin="mtl0 mtl3"></a-entity>
 		<a-entity faceset="vertices: 2 0 4.5  5 2 4.5  4 5.4 4.5  0.5 5.5 4.5  -0.8 2 4.5;" 
@@ -131,12 +127,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 		<a-text position="0.2 5.5 4.5" value="I" width="11" color="black" side="double"></a-text>
 		<a-text position="-1.2 2 4.5" value="J" width="11" color="black" side="double"></a-text>
 	   </a-entity>
-	   <!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a5.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
+	   <a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a5.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>	  
 
 	<a-marker type="barcode" value="4">
-		<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a4.html'" 
-			  position="1.5 0 0" id="pg52_tetraedro" scale="0.5 0.5 0.5">
+		<a-entity position="1.5 0 0" id="pg52_tetraedro" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 1 2 1  5 6 1  6.5 0.5 1  4.2 2.8 5.5;" 
 				mixin="mtl0 mtl2"></a-entity>
 			<a-entity faceset="vertices: 1 2 1  5 6 1  6.5 0.5 1  4.2 2.8 5.5;" 
@@ -146,23 +141,21 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="6.5 0.5 1" value="C" width="11" color="black" side="double"></a-text>
 			<a-text position="4.2 2.8 5.5" value="D" width="11" color="black" side="double"></a-text>
 		</a-entity>
-		<!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a4.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a4.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	<a-marker type="barcode" value="1">
-		<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a1.html'" 
-			  position="3.5 0 0" id="pg52_cilindro" scale="0.5 0.5 0.5">
+		<a-entity position="3.5 0 0" id="pg52_cilindro" scale="0.5 0.5 0.5">
 			<a-cylinder position="-1 3 3" rotation="90 0 0" mixin="mtl0 mtl5" radius="3" height="4"></a-cylinder>
 			<a-text position="-1 3 0.8" value="O" width="11" color="black" side="double"></a-text>
 			<a-text position="-1 3 5.2" value="P" width="11" color="black" side="double"></a-text>
 			<a-text position="-2.5 2.8 5.2" value="r" width="11" color="black" side="double"></a-text>
 		</a-entity>
-		<!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a1.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>-->
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a1.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	<a-marker type="barcode" value="0">
-		<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a0.html'" 
-			  position="-6 0 0" id="pg53_cilindro_obliquo" scale="0.5 0.5 0.5">
+		<a-entity position="-6 0 0" id="pg53_cilindro_obliquo" scale="0.5 0.5 0.5">
 			<a-entity plot="function: 2+(y-1)*2/3+sqrt(4-(x+2-(y-1)*7/3)^2); order: 257; show_zero_planes: false; show_bounding_box: false; 
 				bounds: -4 7 0 0 1 4; color: #58ACFA;">
 			</a-entity>
@@ -186,11 +179,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="-2 -0.2 1" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="5 1.8 4" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a0.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	<a-marker type="barcode" value="6">
-		<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a6.html'" 
-			  position="5 0 0" id="pg55_piramide dupla" scale="0.5 0.5 0.5">
+		<a-entity position="5 0 0" id="pg55_piramide dupla" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 3 2 1  3 4 2  -1 2.6 2.3  3 4 2  3 3.3 3.7  -1 2.6 2.3  3 3.3 3.7  3 1.2 2.8  -1 2.6 2.3  3 1.2 2.8; projectdir:x;" 
 				mixin="mtl0 mtl7"></a-entity>
 			<a-entity faceset="vertices: 3 2 1  3 4 2  7 2.6 2.3  3 4 2  3 3.3 3.7  7 2.6 2.3  3 3.3 3.7  3 1.2 2.8  7 2.6 2.3  3 1.2 2.8; projectdir:x;" 
@@ -206,11 +199,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="-1.5 2.6 2.3" value="E" width="11" color="black" side="double"></a-text>
 			<a-text position="7 2.6 2.3" value="F" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a6.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	<a-marker type="barcode" value="7">
-	  	<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a7.html'" 
-			  position="3.5 0 0" id="pg56_piramide hexagonal" scale="0.5 0.5 0.5">
+	  	<a-entity position="3.5 0 0" id="pg56_piramide hexagonal" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 1 3 0  1 1 2  6 3.7 2.6  1 1 2  1 1.8 4.7  6 3.7 2.6  1 1.8 4.7  1 4.5 5.5  6 3.7 2.6  1 4.5 5.5  1 6.5 3.5  6 3.7 2.6  1 6.5 3.5  1 5.8 0.8  6 3.7 2.6;" 
 				mixin="mtl0 mtl6"></a-entity>
 			<a-entity faceset="vertices: 1 3 0  1 1 2  6 3.7 2.6  1 1 2  1 1.8 4.7  6 3.7 2.6  1 1.8 4.7  1 4.5 5.5  6 3.7 2.6  1 4.5 5.5  1 6.5 3.5  6 3.7 2.6  1 6.5 3.5  1 5.8 0.8  6 3.7 2.6;"
@@ -223,11 +216,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="0.5 5.8 0.8" value="F" width="11" color="black" side="double"></a-text>
 			<a-text position="6 3.7 2.6" value="V" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a7.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	<a-marker type="barcode" value="8">
-	  	<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a8.html'" 
-			  position="3 0 0" id="pg56_prisma reto" scale="0.5 0.5 0.5">
+	  	<a-entity position="3 0 0" id="pg56_prisma reto" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 5 4 2  5 2 1  5 1 3  5 3 4;" 
 				mixin="mtl0 mtl4"></a-entity>
 			<a-entity faceset="vertices: 1 4 2  1 2 1  1 1 3  1 3 4;" 
@@ -256,11 +249,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="0.5 1 3" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="0.5 3 4" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a8.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	  <a-marker type="barcode" value="9">
-	  	<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a9.html'" 
-			  position="2.5 0 0" id="pg57_piramide obliqua" scale="0.5 0.5 0.5">
+	  	<a-entity position="2.5 0 0" id="pg57_piramide obliqua" scale="0.5 0.5 0.5">
 		  	<a-entity faceset="vertices: 7 2 3  7 2.5 1  7 4.5 0.5  7 6 2  7 5.5 4  7 3.5 4.5; projectdir: x" 
 				mixin="mtl0 mtl8"></a-entity>
 			<a-entity faceset="vertices: -1 0.5 4.5  7 2 3  7 2.5 1  7 4.5 0.5  7 6 2;" 
@@ -282,11 +275,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="7 3.5 4.5" value="F" width="11" color="black" side="double"></a-text>
 			<a-text position="-1.5 0.5 4.5" value="V" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a9.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	  <a-marker type="barcode" value="10">
-	  	<a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a10.html'" 
-			  position="3.5 0 0" id="pg57_prisma obliquo" scale="0.5 0.5 0.5">	  
+	  	<a-entity position="3.5 0 0" id="pg57_prisma obliquo" scale="0.5 0.5 0.5">	  
 			<a-entity faceset="vertices: 1 2 1.5  1 4 3  1 2.5 5  1 0.5 3.7 ;" 
 				mixin="mtl0 mtl1"></a-entity>
 			<a-entity faceset="vertices: -3 3.6 -2.7  -3 5.6 -1.2  -3 4.1 0.8  -3 2.1 -0.5;" 
@@ -309,20 +302,20 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-plane position="0 2.5 2.5" mixin="mtl0 mtl8" rotation="0 0 0" width="7" height="4" >
 				<a-animation attribute="opacity" direction="alternate" from="0" to="0.4" dur="10000" repeat="indefinite"></a-animation>
 			</a-plane>
-				<a-text position="1 2 1.5" value="A" width="11" color="black" side="double"></a-text>
-				<a-text position="1 4 3" value="B" width="11" color="black" side="double"></a-text>
-				<a-text position="1 2.5 5" value="C" width="11" color="black" side="double"></a-text>
-				<a-text position="1 0.5 3.7" value="D" width="11" color="black" side="double"></a-text>
-				<a-text position="-3.5 3.6 -2.7" value="E" width="11" color="black" side="double"></a-text>
-				<a-text position="-3.5 5.6 -1.2" value="F" width="11" color="black" side="double"></a-text>
-				<a-text position="-3.5 4.1 0.8" value="G" width="11" color="black" side="double"></a-text>
-				<a-text position="-3.5 2.1 -0.5" value="H" width="11" color="black" side="double"></a-text>
+			<a-text position="1 2 1.5" value="A" width="11" color="black" side="double"></a-text>
+			<a-text position="1 4 3" value="B" width="11" color="black" side="double"></a-text>
+			<a-text position="1 2.5 5" value="C" width="11" color="black" side="double"></a-text>
+			<a-text position="1 0.5 3.7" value="D" width="11" color="black" side="double"></a-text>
+			<a-text position="-3.5 3.6 -2.7" value="E" width="11" color="black" side="double"></a-text>
+			<a-text position="-3.5 5.6 -1.2" value="F" width="11" color="black" side="double"></a-text>
+			<a-text position="-3.5 4.1 0.8" value="G" width="11" color="black" side="double"></a-text>
+			<a-text position="-3.5 2.1 -0.5" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a10.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 
 	 <a-marker type="barcode" value="11">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a11.html'" 
-			   position="5 0 0" id="pg62_piramide_quadrada" scale="0.5 0.5 0.5">
+	    	 <a-entity position="5 0 0" id="pg62_piramide_quadrada" scale="0.5 0.5 0.5">
 	  		<a-entity faceset="vertices: 1 1 2  3 3 0  4.4 4.4 2.7  2.5 2.5 4.8  -1.1 6 2.4; projectdir: x" 
 				mixin="mtl0 mtl3"></a-entity>
 			<a-entity faceset="vertices: 1 1 2  3 3 0  -1.1 6 2.4;" 
@@ -338,12 +331,12 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="4.4 4.4 2.7" value="C" width="11" color="black" side="double"></a-text>
 			<a-text position="2.6 2.5 4.8" value="D" width="11" color="black" side="double"></a-text>
 			<a-text position="-1.1 6.3 2.4" value="V" width="11" color="black" side="double"></a-text>
-		</a-entity> 
+		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a11.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	 </a-marker>
 	  
 	 <a-marker type="barcode" value="12">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a12.html'" 
-			   position="4.5 0 0" id="pg62_prisma_obliquo" scale="0.5 0.5 0.5">
+	    	 <a-entity position="4.5 0 0" id="pg62_prisma_obliquo" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 3 1 2  5 2 0  6.7 2.9 2.1  4.8 1.9 4;" 
 				mixin="mtl0 mtl2"></a-entity>
 			<a-entity faceset="vertices: -1.1 2.6 3.2  0.9 3.6 1.4  2.5 4.5 3.5  0.6 3.5 5.4;" 
@@ -375,11 +368,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="2.6 4.5 3.5" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="0.2 3.5 5.4" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a12.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 
 	  <a-marker type="barcode" value="13">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a13.html'" 
-			   position="5.5 0 0" id="pg64_prisma_arquimediano" scale="0.5 0.5 0.5">
+	    	 <a-entity position="5.5 0 0" id="pg64_prisma_arquimediano" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: 1 1 0  4 2.5 1  4.7 2.7 4.4  2.4 1.6 6.8  -0.7 0.2 5.8  -1.4 -0.2 2.5;" 
 				mixin="mtl0 mtl8"></a-entity>
 			<a-entity faceset="vertices: -0.6 4.3 0  2.4 5.8 1  3.1 6 4.4  0.8 4.9 6.8  -2.3 3.5 5.8  -3 3.1 2.5;" 
@@ -419,11 +412,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="-2.3 3.7 5.8" value="K" width="11" color="black" side="double"></a-text>
 			<a-text position="-3 3.4 2.5" value="L" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a13.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 
 	  <a-marker type="barcode" value="14">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a14.html'" 
-			   position="3.5 0 0" id="pg65_antiprisma_arquimediano" scale="0.5 0.5 0.5">
+	    	 <a-entity position="3.5 0 0" id="pg65_antiprisma_arquimediano" scale="0.5 0.5 0.5">
 	  		<a-entity faceset="vertices: 0 4 1  5.8 4 1.6  3 2 0  4.4 5 4.7  3.8 1.5 3.5  0.9 3.5 4.4  3.1 5.7 -0.3;" 
 				mixin="mtl0 mtl8"></a-entity>
 			<a-entity faceset="vertices: 3.1 5.7 -0.3  0 4 1  5.8 4 1.6  0.9 3.5 4.4  4.4 5 4.7  1.6 6.8 3;" 
@@ -443,11 +436,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="4.4 5.2 4.7" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="1.6 7 3" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a14.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	</a-marker>
 	  
 	  <a-marker type="barcode" value="15">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a15.html'" 
-			   position="3 0 0" id="pg65_cilindro reto" scale="0.5 0.5 0.5">
+	    	 <a-entity position="3 0 0" id="pg65_cilindro reto" scale="0.5 0.5 0.5">
 			<a-entity>
 				<a-cylinder position="1.4 3 3" rotation="0 0 45" mixin="mtl0 mtl1" radius="2" height="4.2"></a-cylinder>
 				<a-text position="3 1.5 3" value="O" width="11" color="black" side="double"></a-text>
@@ -455,11 +448,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 				<a-entity line="start: 3 1.5 3; end: 0 4.5 3; color: #6E6E6E"></a-entity>
 			</a-entity>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a15.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 
 	  <a-marker type="barcode" value="16">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a16.html'" 
-			   position="2 0 0" id="pg69_prisma arquimediano" scale="0.5 0.5 0.5">
+	    	 <a-entity position="2 0 0" id="pg69_prisma arquimediano" scale="0.5 0.5 0.5">
 			<a-entity faceset="vertices: -2 2.5 2.5  0.5 5 1.5  2.9 2.7 0.5  1.9 -0.5 0.8  -1.1 -0.7 2;" 
 				mixin="mtl0 mtl6"></a-entity>
 			<a-entity faceset="vertices: -0.8 2.5 5.7  1.7 5 4.7  4.1 2.7 3.7  3.1 -0.5 4  0.1 -0.7 5.2;" 
@@ -494,11 +487,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="3.1 -0.5 4" value="I" width="11" color="black" side="double"></a-text>
 			<a-text position="0.1 -0.7 5.2" value="J" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a16.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	  <a-marker type="barcode" value="17">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a17.html'" 
-			   position="3.5 0 0" id="pg69_prisma obliquo" scale="0.5 0.5 0.5">	  
+	    	 <a-entity position="3.5 0 0" id="pg69_prisma obliquo" scale="0.5 0.5 0.5">	  
 	  		<a-entity faceset="vertices: -3 0 1.5  -1 2 0.5  -2.8 4.2 1.5  -4.8 2.3 2.4;" 
 				mixin="mtl0 mtl2"></a-entity>
 			<a-entity faceset="vertices: 4 -0.6 4  6 1.4 3  4.2 3.6 4  2.2 1.7 4.9;" 
@@ -527,11 +520,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="4.2 3.6 4" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="1.7 1.7 4.9" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a17.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	  <a-marker type="barcode" value="18">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a18.html'" 
-			   position="4 0 0" id="pg70_octaedro" scale="0.5 0.5 0.5">	
+	    	 <a-entity position="4 0 0" id="pg70_octaedro" scale="0.5 0.5 0.5">	
 			<a-entity faceset="vertices: 4 0 3  3.1 3.5 2.3  0.7 -0.6 4.2  -0.1 2.9 3.6  1 1 1;" 
 				mixin="mtl0 mtl8"></a-entity>
 			<a-entity faceset="vertices: 4 0 3  3.1 3.5 2.3  0.7 -0.6 4.2  -0.1 2.9 3.6  2.8 2 5.6;" 
@@ -547,11 +540,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="2.8 2 5.6" value="E" width="11" color="black" side="double"></a-text>
 			<a-text position="-0.5 2.9 3.6" value="F" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a18.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 
 	  <a-marker type="barcode" value="19">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a19.html'" 
-			   position="4.5 0 0" id="pg72_cilindro obliquo" scale="0.5 0.5 0.5">	  
+	    	 <a-entity position="4.5 0 0" id="pg72_cilindro obliquo" scale="0.5 0.5 0.5">	  
 			<a-entity plot="function: (y-2)*2/4.23+sqrt(4-(x+(y-2)*3.33/4.23)^2); order: 257; show_zero_planes: false; show_bounding_box: false; 
 				bounds: -3.5 4 0 0 -0.55 3.67; color: #ee514b;" position="-1 2.2 1.5" rotation="0 330 0">
 			</a-entity>
@@ -575,11 +568,11 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="-2.3 3 5" value="G" width="11" color="black" side="double"></a-text>
 			<a-text position="2.7 1 3" value="H" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a19.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>
 	  </a-marker>
 	  
 	  <a-marker type="barcode" value="20">
-	    	 <a-entity onclick="javascript:window.location.href='http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a20.html'" 
-			   position="-4.5 0 0" id="pg72_cone" scale="0.5 0.5 0.5">		  
+	    	 <a-entity position="-4.5 0 0" id="pg72_cone" scale="0.5 0.5 0.5">		  
 	  		<a-cone position="1 3 3.5" rotation="90 0 0" mixin="mtl0 mtl3" height="5" radius-bottom="2.5"></a-cone>
 			<a-plane position="0 2.5 1.75" mixin="mtl0 mtl8" rotation="0 340 0" width="8" height="6" >
 					<a-animation attribute="opacity" direction="alternate" from="0" to="0.5" dur="10000" repeat="indefinite"></a-animation>
@@ -594,6 +587,7 @@ onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"--
 			<a-text position="1 5.8 1" value="C" width="11" color="black" side="double"></a-text>
 			<a-text position="1 0.2 1" value="D" width="11" color="black" side="double"></a-text>
 		</a-entity>
+		<a-entity rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a20.html; title: VR; borderColor:white; backgroundColor:#81BEF7;"></a-entity>  
 	 </a-marker>
 
     </a-scene>
