@@ -28,12 +28,12 @@
 		<a-mixin id="linhas" material="color: #6E6E6E; wireframe: true; wireframe-linewidth:1;"></a-mixin>
 	</a-assets>
 	
-	<a-entity camera></a-entity>
+	<a-entity camera markerhandler emitevents="true" cursor="rayOrigin: mouse"></a-entity>
 	  
 	<!--<a-light type="ambient" color="white" intensity="1"></a-light>
 	<a-light type="spot" intensity="0.8" position="1 4 1" angle="180" color="#eaeaea"></a-light>-->
 	  
-	<a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" type="barcode" value="53">
+	<a-marker type="barcode" value="53">
 	   <a-entity ondblclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"
 		     position="0 0.5 0" id="teste_curva" scale="1 1 1">
 			<a-entity id="eixos">
