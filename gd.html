@@ -46,24 +46,7 @@
 		}
 	</script>
 onclick="abrir('http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html')"-->
-	  
-	<a-marker cursor='rayOrigin:mouse' type="barcode" value="53">
-	   <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/a40c.html"
-		     position="0 0.5 0" id="teste_curva" scale="1 1 1">
-		<a-entity id="eixos">
-			<a-text position="0.02 -0.08 0" value="O" width="3" side="double" color="black"></a-text>
-			<a-cylinder rotation="0 0 0" radius="0.005" height="2" color="rgb(0,255,0)"></a-cylinder>
-			<a-cylinder rotation="90 0 0" radius="0.005" height="2" color="blue"></a-cylinder>
-			<a-cylinder rotation="0 0 90" radius="0.005" height="2" color="red"></a-cylinder>
-			<a-text position="1.05 0 0" value="x" width="3" side="double" color="black"></a-text>
-			<a-text position="0 1.05 0" value="z" width="3" side="double" color="black"></a-text>
-			<a-text position="0 0 1.05" value="y" width="3" side="double" color="black"></a-text>
-		</a-entity>			
-		<a-entity id="curva1" plot="function: -0.8*sqrt(y^4)+x^2; order: 257; show_zero_planes: true; show_bounding_box: false; 
-		bounds: -1 1 -1 1 -1 1; color: #81DAF5;"></a-entity>
-  	   </a-entity>
-	 </a-marker>
-	  
+  
 	 <a-marker cursor='rayOrigin:mouse' type="barcode" value="2">
 	   <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a2.html"
 		     position="3.5 0 0" id="pg50_piramide_dupla" scale="0.5 0.5 0.5">
