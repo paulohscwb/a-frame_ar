@@ -20,7 +20,7 @@
 	</script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
-  <a-scene cursor='rayOrigin:mouse' embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+  <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 	<a-assets>
 		<a-mixin id="mtl0" material="opacity: 0.7; side: double; metalness:0.3; roughness:0.9;"></a-mixin>
 		<a-mixin id="mtl1" material="color: #4b97ee;"></a-mixin>
@@ -40,7 +40,7 @@
 	<!--<a-light type="ambient" color="#f2f2f2" intensity="0.5"></a-light>
 	<a-light type="spot" intensity="1.3" position="0 1 0" angle="180" color="#f2f2f2"></a-light>-->
 	  
-	  <a-marker type="barcode" value="22">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="22">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a22.html" 
 			    position="-4 2 0" id="pg48_icosaedro_alturas" scale="0.33 0.33 0.33">
 	  		<a-entity id="ABCDE-K" faceset="vertices: 2 3 4  5 3 2  2.9 3 7.5  6.5 3 7.5  7.9 3 4.3  4.9 1.5 5;" 
@@ -91,7 +91,7 @@
 		<!--<a-entity rotation="-90 0 0" position="0 0 0" scale="0.7 0.7 0.7" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a22.html; title: VR; borderColor:yellow;"></a-entity>-->
 	  </a-marker>	  
 	  
-	  <a-marker type="barcode" value="42">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="42">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a42.html"
 			    position="-4 0 0" id="pg47_octaedro1" scale="0.33 0.33 0.33">
 			<a-entity faceset="vertices: 1 3 1  5 3 0  6 3 4  2 3 5  3.5 5.9 2.5;" 
@@ -111,7 +111,7 @@
 		</a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="41">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="41">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a41.html"
 			    position="-5 0 0" id="pg47_octaedro2" scale="0.33 0.33 0.33">
 	  		<a-entity faceset="vertices: 1 1 4  6 1 5  6.6 5.2 2.1  1.6 5.2 1.1  4.4 1 0.2; projectdir: z"
@@ -137,7 +137,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="40">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="40">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a40.html"
 			    position="-5 0 0" id="pg46_antiprisma" scale="0.33 0.33 0.33">	  
 			<a-entity faceset="vertices:2 4 5  5 4 6  7.4 4 3.9  6.7 4 0.8  3.7 4 -0.2  1.4 4 1.9;" 
@@ -185,7 +185,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="39">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="39">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a39.html"
 			    position="-5 0 0" id="pg46_prismaObliquo" scale="0.33 0.33 0.33">	  
 			<a-entity id="ABCD" faceset="vertices: 1 0 3  4 0 1  5.8 0 4  2.9 0 6  1 0 3;" 
@@ -218,7 +218,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="38">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="38">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a38.html"
 			    position="-5 0 0" id="pg45_prismaTriangular" scale="0.33 0.33 0.33">	  
 	  		<a-entity id="ABC" faceset="vertices: 1 1 1  5.8 1 2.3  2.4 1 5.7;" 
@@ -246,7 +246,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="37">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="37">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a37.html"
 			    position="-5 0 0" id="pg45_tetraedro" scale="0.33 0.33 0.33">	  
 	  		<a-entity faceset="vertices: 1 0 2  5 0 6  6.4 0 0.5  4 4.5 2.8;" 
@@ -262,7 +262,7 @@
 		  </a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="36">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="36">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a36.html"
 			    position="-5 0 0" id="pg44_piramidequadradaobliqua" scale="0.33 0.33 0.33">
 			<a-entity faceset="vertices: 2 1 0  4 1 2  2 1 4  0 1 2  6 6 1;" 
@@ -282,7 +282,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="34">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="34">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a34.html"
 			    position="-5 0 0" id="pg44_piramidequadrada" scale="0.33 0.33 0.33">	  	
 	  		<a-entity faceset="vertices: 1 0 2  4 0 1  5 0 4  2 0 5  3 5 3; projectdir:y" 
@@ -300,7 +300,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="32">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="32">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a32.html"
 			    position="-3 0 0" id="pg43_piramidehexagonal" scale="0.33 0.33 0.33">
 			<a-entity faceset="vertices: 1 0 1  -3 0 0  -5.9 0 3  -4.7 0 6.9  -0.7 0 7.9  2.1 0 4.9  -1.9 5 4;" 
@@ -317,7 +317,7 @@
 		</a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="31">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="31">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a31.html"
 			    position="2 0 0" id="pg88_prismapentagonal" scale="0.5 0.5 0.5">		
 	  		<a-entity id="ABCDE" faceset="vertices: 3.1 4.5 1.5  3.6 2.2 2.8  1.7 1.7 4.7  -0.2 3.8 4.4  0.7 5.4 2.4;" 
@@ -356,7 +356,7 @@
 		</a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="30">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="30">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a30.html"
 			    position="3 0 0" id="pg87_piramidehexagonal" scale="0.5 0.5 0.5">		
 			<a-entity faceset="vertices: 2.4 0.7 3.2  4.3 1.5 3  4.7 2.5 1  3.4 2.8 -0.3  1.5 2 0  1 0.8 1.6  1.2 5.9 3.5;" 
@@ -384,7 +384,7 @@
 		</a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="29">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="29">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a29.html"
 			    position="3 0 0" id="pg86_prismaquadrangular" scale="0.5 0.5 0.5">		  
 	  		<a-entity id="ABCD" faceset="vertices: 1.4 2.2 1  3.7 0.5 1.8  5.5 1.3 -0.7  3.1 3 -1.6;" 
@@ -417,7 +417,7 @@
 		</a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="28">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="28">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a28.html"
 			    position="2 0 0" id="pg85_prismahexagonal" scale="0.5 0.5 0.5">		  
 	  		<a-entity id="ABCDEF" faceset="vertices: 3 1 1.8  4.9 2.7 1.4  4.3 4.9 0.3  2 5.5 -0.5  0 3.7 -0.1  0.6 1.5 1;" 
@@ -461,7 +461,7 @@
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="27">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="27">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a27.html"
 			    position="-4 0 0" id="pg80_octaedro" scale="0.5 0.5 0.5">	  
 	  		<a-entity faceset="vertices: 2.7 5.5 3.7  3.9 2 5.8  5 0.3 2.1  3.9 3.7 0.2  1.1 1.7 2.6;" 
@@ -472,16 +472,16 @@
 				mixin="mtl0 mtl6"></a-entity>
 			<a-entity faceset="vertices: 2.7 5.5 3.7  3.9 2 5.8  5 0.3 2.1  3.9 3.7 0.2  6.7 4 3.3;" 
 				mixin="linhas"></a-entity>
-			<a-text position="2.3 5.5 3.7" value="D" width="11" color="black" side="double"></a-text>
-			<a-text position="3.5 2 5.8" value="E" width="11" color="black" side="double"></a-text>
-			<a-text position="5.1 0.3 2.1" value="B" width="11" color="black" side="double"></a-text>
-			<a-text position="4.1 3.9 0.2" value="F" width="11" color="black" side="double"></a-text>
-			<a-text position="0.7 1.7 2.6" value="A" width="11" color="black" side="double"></a-text>
-			<a-text position="6.7 4 3.3" value="C" width="11" color="black" side="double"></a-text>
+			<a-text position="2.3 5.5 3.7" value="D" mixin="texto"></a-text>
+			<a-text position="3.5 2 5.8" value="E" mixin="texto"></a-text>
+			<a-text position="5.1 0.3 2.1" value="B" mixin="texto"></a-text>
+			<a-text position="4.1 3.9 0.2" value="F" mixin="texto"></a-text>
+			<a-text position="0.7 1.7 2.6" value="A" mixin="texto"></a-text>
+			<a-text position="6.7 4 3.3" value="C" mixin="texto""></a-text>
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="26">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="26">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a26.html"
 			    position="-5 0 0" id="pg79_piramide_hexagonal" scale="0.5 0.5 0.5">	  
 	  		<a-entity faceset="vertices: 3.2 2.4 4  5.2 1.2 3  7.5 1.8 3.5  8 3.7 5.1  6 5 6.2  3.7 4.2 5.6  5.6 0 8.5; projectdir: y" 
@@ -501,17 +501,17 @@
 				line__10="start: 7.5 1.8 3.5; end: 8 3.7 5.1; color: #6E6E6E" line__12="start: 8 3.7 5.1; end: 6 5 6.2; color: #6E6E6E"
 				line__13="start: 6 5 6.2; end: 3.7 4.2 5.6; color: #6E6E6E" line__18="start: 3.7 4.2 5.6; end: 3.2 2.4 4; color: #6E6E6E;">
 			</a-entity>
-			<a-text position="2.8 2.4 4" value="A" width="11" color="black" side="double"></a-text>
-			<a-text position="5.2 1 3" value="B" width="11" color="black" side="double"></a-text>
-			<a-text position="7.5 1.8 3.5" value="C" width="11" color="black" side="double"></a-text>
-			<a-text position="8 3.7 5.1" value="D" width="11" color="black" side="double"></a-text>
-			<a-text position="6.1 5.1 6.2" value="E" width="11" color="black" side="double"></a-text>
-			<a-text position="3.3 4.2 5.6" value="F" width="11" color="black" side="double"></a-text>
-			<a-text position="5.7 0 8.5" value="V" width="11" color="black" side="double"></a-text>
+			<a-text position="2.8 2.4 4" value="A" mixin="texto"></a-text>
+			<a-text position="5.2 1 3" value="B" mixin="texto"></a-text>
+			<a-text position="7.5 1.8 3.5" value="C" mixin="texto"></a-text>
+			<a-text position="8 3.7 5.1" value="D" mixin="texto""></a-text>
+			<a-text position="6.1 5.1 6.2" value="E" mixin="texto"></a-text>
+			<a-text position="3.3 4.2 5.6" value="F" mixin="texto"></a-text>
+			<a-text position="5.7 0 8.5" value="V" mixin="texto"></a-text>
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="25">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="25">
 		  <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a25.html" 
 			    position="4.5 0 0" id="pg78_prisma_hexagonal" scale="0.5 0.5 0.5">	  
 	  		<a-entity id="ABCDEF" faceset="vertices: 1 4 4  2 2 5  4.3 1.8 5.2  5.8 3.3 4.2  4.9 5.4 3.3  2.5 5.5 3.1;" 
@@ -540,22 +540,22 @@
 				line__14="start: 4.3 0.3 2.5; end: 4.3 1.8 5.2; color: #6E6E6E" line__15="start: 5.8 1.9 1.6; end: 5.8 3.3 4.2; color: #6E6E6E"
 				line__16="start: 4.9 3.9 0.6; end: 4.9 5.4 3.3; color: #6E6E6E" line__17="start: 2.5 4.1 0.5; end: 2.5 5.5 3.1; color: #6E6E6E;">
 			</a-entity>
-			<a-text position="0.6 4 4" value="A" width="11" color="black" side="double"></a-text>
-			<a-text position="1.6 2 5" value="B" width="11" color="black" side="double"></a-text>
-			<a-text position="4.4 1.8 5.2" value="C" width="11" color="black" side="double"></a-text>
-			<a-text position="5.8 3.3 4.2" value="D" width="11" color="black" side="double"></a-text>
-			<a-text position="4.9 5.4 3.3" value="E" width="11" color="black" side="double"></a-text>
-			<a-text position="2.1 5.5 3.1" value="F" width="11" color="black" side="double"></a-text>
-			<a-text position="0.6 2.5 1.3" value="G" width="11" color="black" side="double"></a-text>
-			<a-text position="1.6 0.5 2.2" value="H" width="11" color="black" side="double"></a-text>
-			<a-text position="4.4 0.3 2.5" value="I" width="11" color="black" side="double"></a-text>
-			<a-text position="5.8 1.9 1.6" value="J" width="11" color="black" side="double"></a-text>
-			<a-text position="4.9 3.9 0.6" value="K" width="11" color="black" side="double"></a-text>
-			<a-text position="2.1 4.1 0.5" value="L" width="11" color="black" side="double"></a-text>
+			<a-text position="0.6 4 4" value="A" mixin="texto"></a-text>
+			<a-text position="1.6 2 5" value="B" mixin="texto"></a-text>
+			<a-text position="4.4 1.8 5.2" value="C" mixin="texto"></a-text>
+			<a-text position="5.8 3.3 4.2" value="D" mixin="texto"></a-text>
+			<a-text position="4.9 5.4 3.3" value="E" mixin="texto"></a-text>
+			<a-text position="2.1 5.5 3.1" value="F" mixin="texto"></a-text>
+			<a-text position="0.6 2.5 1.3" value="G" mixin="texto"></a-text>
+			<a-text position="1.6 0.5 2.2" value="H" mixin="texto"></a-text>
+			<a-text position="4.4 0.3 2.5" value="I" mixin="texto""></a-text>
+			<a-text position="5.8 1.9 1.6" value="J" mixin="texto"></a-text>
+			<a-text position="4.9 3.9 0.6" value="K" mixin="texto"></a-text>
+			<a-text position="2.1 4.1 0.5" value="L" mixin="texto"></a-text>
 		</a-entity>
 	  </a-marker>
 	  
-	  <a-marker type="barcode" value="24">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="24">
 	    	 <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a24.html"
 			   position="4.5 0 0" id="pg77_cubo" scale="0.5 0.5 0.5">
 	  		<a-entity id="ABCD" faceset="vertices: 2.3 3.2 1.9  5.1 1.2 3.1  7.5 3.6 1.7  4.8 5.5 0.5;" 
@@ -580,18 +580,18 @@
 			<a-plane position="4 4 3" mixin="mtl0 mtl1" rotation="45 90 0" width="8" height="8" >
 				<a-animation attribute="opacity" direction="alternate" from="0" to="0.5" dur="10000" repeat="indefinite"></a-animation>
 			</a-plane>
-			<a-text position="1.9 3.2 1.9" value="A" width="11" color="black" side="double"></a-text>
-			<a-text position="5.2 1.2 3.1" value="B" width="11" color="black" side="double"></a-text>
-			<a-text position="7.5 3.6 1.7" value="C" width="11" color="black" side="double"></a-text>
-			<a-text position="4.9 5.5 0.5" value="D" width="11" color="black" side="double"></a-text>
-			<a-text position="1.9 5.2 5" value="E" width="11" color="black" side="double"></a-text>
-			<a-text position="5.2 3.2 6.2" value="F" width="11" color="black" side="double"></a-text>
-			<a-text position="7.5 5.6 4.8" value="G" width="11" color="black" side="double"></a-text>
-			<a-text position="4.9 7.5 3.6" value="H" width="11" color="black" side="double"></a-text>
+			<a-text position="1.9 3.2 1.9" value="A" mixin="texto"></a-text>
+			<a-text position="5.2 1.2 3.1" value="B" mixin="texto"></a-text>
+			<a-text position="7.5 3.6 1.7" value="C" mixin="texto"></a-text>
+			<a-text position="4.9 5.5 0.5" value="D" mixin="texto"></a-text>
+			<a-text position="1.9 5.2 5" value="E" mixin="texto"></a-text>
+			<a-text position="5.2 3.2 6.2" value="F" mixin="texto"></a-text>
+			<a-text position="7.5 5.6 4.8" value="G" mixin="texto"></a-text>
+			<a-text position="4.9 7.5 3.6" value="H" mixin="texto"></a-text>
 		</a-entity>
 	  </a-marker> 
 	  
-  	  <a-marker type="barcode" value="23">
+  	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="23">
 	    	 <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a23.html" 
 			   position="2.5 0 0" id="pg76_cilindro" scale="0.5 0.5 0.5">	
 			<a-cylinder position="1.5 2.8 1.6" rotation="60 0 0" mixin="mtl0 mtl1" radius="1.6" height="2.2"></a-cylinder>
@@ -599,7 +599,7 @@
 		  </a-entity>
 	  </a-marker>
 	
-	  <a-marker type="barcode" value="21">
+	  <a-marker cursor="rayOrigin:mouse" type="barcode" value="21">
 	    	 <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a21.html" 
 			   position="-8 0 0" id="pg91_dodecaedro_alturas" scale="0.5 0.5 0.5">		  
 		  	<a-entity id="ABCDE" faceset="vertices: 6 2.5 2.5  7.5 2.5 5.7  4.9 2.5 8.2  1.7 2.5 6.5  2.3 2.5 2.9;" 
@@ -644,28 +644,28 @@
 				line__24="start: 0 5.7 7.2; end: -0.4 7.6 4.2; color: #6E6E6E" line__29="start: -0.4 7.6 4.2; end: 1.1 5.7 1.5; color: #6E6E6E"
 				line__25="start: 1.1 5.7 1.5; end: 3.9 7.6 0.3; color: #6E6E6E" line__30="start: 3.9 7.6 0.3; end: 6.9 5.7 0.8; color: #6E6E6E">
 			</a-entity>
-			<a-text position="6 2.5 2.5" value="A" width="11" color="black" side="double"></a-text>
-			<a-text position="7.5 2.5 5.7" value="B" width="11" color="black" side="double"></a-text>
-			<a-text position="4.9 2.5 8.2" value="C" width="11" color="black" side="double"></a-text>
-			<a-text position="1.3 2.5 6.5" value="D" width="11" color="black" side="double"></a-text>
-			<a-text position="1.9 2.5 2.9" value="E" width="11" color="black" side="double"></a-text>
-			<a-text position="6.9 5.7 0.8" value="F" width="11" color="black" side="double"></a-text>
-			<a-text position="9 7.6 3" value="G" width="11" color="black" side="double"></a-text>
-			<a-text position="9.3 5.7 6.1" value="H" width="11" color="black" side="double"></a-text>
-			<a-text position="7.8 7.6 8.8" value="I" width="11" color="black" side="double"></a-text>
-			<a-text position="5.2 5.7 10.1" value="J" width="11" color="black" side="double"></a-text>
-			<a-text position="1.6 7.6 9.4" value="K" width="11" color="black" side="double"></a-text>
-			<a-text position="-0.4 5.7 7.2" value="L" width="11" color="black" side="double"></a-text>
-			<a-text position="-0.9 7.6 4.2" value="M" width="11" color="black" side="double"></a-text>
-			<a-text position="0.7 5.7 1.5" value="N" width="11" color="black" side="double"></a-text>
-			<a-text position="3.5 7.6 0.3" value="P" width="11" color="black" side="double"></a-text>
-			<a-text position="7.3 10.7 3.8" value="Q" width="11" color="black" side="double"></a-text>
-			<a-text position="6.6 10.7 7.4" value="R" width="11" color="black" side="double"></a-text>
-			<a-text position="2.5 10.7 7.8" value="S" width="11" color="black" side="double"></a-text>
-			<a-text position="1 10.7 4.6" value="T" width="11" color="black" side="double"></a-text>
-			<a-text position="3.5 10.7 2.1" value="U" width="11" color="black" side="double"></a-text>
-			<a-text position="9.3 3.7 6.1" value="h1" width="11" color="black" side="double"></a-text>
-			<a-text position="1.4 6.5 9.4" value="h2" width="11" color="black" side="double"></a-text>
+			<a-text position="6 2.5 2.5" value="A" mixin="texto"></a-text>
+			<a-text position="7.5 2.5 5.7" value="B" mixin="texto"></a-text>
+			<a-text position="4.9 2.5 8.2" value="C" mixin="texto"></a-text>
+			<a-text position="1.3 2.5 6.5" value="D" mixin="texto"></a-text>
+			<a-text position="1.9 2.5 2.9" value="E" mixin="texto"></a-text>
+			<a-text position="6.9 5.7 0.8" value="F" mixin="texto"></a-text>
+			<a-text position="9 7.6 3" value="G" mixin="texto""></a-text>
+			<a-text position="9.3 5.7 6.1" value="H" mixin="texto"></a-text>
+			<a-text position="7.8 7.6 8.8" value="I" mixin="texto"></a-text>
+			<a-text position="5.2 5.7 10.1" value="J" mixin="texto"></a-text>
+			<a-text position="1.6 7.6 9.4" value="K" mixin="texto"></a-text>
+			<a-text position="-0.4 5.7 7.2" value="L" mixin="texto"></a-text>
+			<a-text position="-0.9 7.6 4.2" value="M" mixin="texto""></a-text>
+			<a-text position="0.7 5.7 1.5" value="N" mixin="texto"></a-text>
+			<a-text position="3.5 7.6 0.3" value="P" mixin="texto"></a-text>
+			<a-text position="7.3 10.7 3.8" value="Q" mixin="texto"></a-text>
+			<a-text position="6.6 10.7 7.4" value="R" mixin="texto"></a-text>
+			<a-text position="2.5 10.7 7.8" value="S" mixin="texto"></a-text>
+			<a-text position="1 10.7 4.6" value="T" mixin="texto"></a-text>
+			<a-text position="3.5 10.7 2.1" value="U" mixin="texto"></a-text>
+			<a-text position="9.3 3.7 6.1" value="h1" mixin="texto"></a-text>
+			<a-text position="1.4 6.5 9.4" value="h2" mixin="texto"></a-text>
 		</a-entity>
 	 </a-marker>
 	
