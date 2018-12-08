@@ -22,10 +22,10 @@
    <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
         <a-assets>
             <a-asset-item id="catedral" src="./imagens/notre.dae"></a-asset-item>
-            <a-asset-item id="teatro" src="./imagens/arena.dae"></a-asset-item>
+            <a-asset-item id="teatro" src="./imagens/torres.dae"></a-asset-item>
         </a-assets>
 
-        <a-entity camera ></a-entity>
+        <a-entity camera cursor="rayOrigin:mouse"></a-entity>
 
         <a-marker type="barcode" value="2">
 		<a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/catedral.html">
