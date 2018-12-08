@@ -23,6 +23,7 @@
         <a-assets>
             <a-asset-item id="catedral" src="./imagens/notre.dae"></a-asset-item>
             <a-asset-item id="torres" src="./imagens/torres.dae"></a-asset-item>
+	    <a-asset-item id="torres" src="./imagens/arena.dae"></a-asset-item>
         </a-assets>
 
         <a-entity camera cursor="rayOrigin:mouse"></a-entity>
@@ -32,9 +33,14 @@
    	    	<a-entity collada-model="#catedral" scale="0.03 0.03 0.03" position="0 0 0"></a-entity>
         </a-marker>
         
-        <a-marker type="barcode" value="4">
-            	<a-entity position="0 0 2" rotation="-90 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/teatro.html; title: VR;"></a-entity>
-                <a-entity collada-model="#torres" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+        <a-marker type="barcode" value="0">
+            	<a-entity position="0 0 2" rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/teatro.html; title: VR;"></a-entity>
+                <a-entity collada-model="#arena" scale="0.03 0.03 0.03" position="0 0 0"></a-entity>
+        </a-marker>
+	   
+	<a-marker type="barcode" value="4">
+            	<a-entity position="0 0 2" rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/torres.html; title: VR;"></a-entity>
+                <a-entity collada-model="#torres" scale="0.03 0.03 0.03" position="0 0 0"></a-entity>
         </a-marker>
 	   
     </a-scene>
