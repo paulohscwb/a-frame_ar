@@ -28,17 +28,13 @@
         <a-entity camera></a-entity>
 
         <a-marker type="barcode" value="2" cursor="rayOrigin:mouse">
-		<a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/catedral.html"
-			  scale="0.04 0.04 0.04" position="0 0 0">
-		    <a-entity collada-model="#catedral"></a-entity>
-		</a-entity>
+		<a-entity position="2 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/catedral.html; title: VR;"></a-entity>
+   	    	<a-entity collada-model="#catedral" scale="0.04 0.04 0.04" position="0 0 0"></a-entity>
         </a-marker>
         
         <a-marker type="barcode" value="4" cursor="rayOrigin:mouse">
-            <a-entity navigate-on-click="url: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/teatro.html"
-		      scale="0.05 0.05 0.05" position="0 0 0"> 
-               <a-entity collada-model="#torres"></a-entity>
-	    </a-entity>
+            	<a-entity position="2 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/teatro.html; title: VR;"></a-entity>
+                <a-entity collada-model="#torres" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
         </a-marker>
 	   
     </a-scene>
