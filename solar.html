@@ -8,7 +8,6 @@
    <a-scene cursor="rayOrigin: mouse" raycaster="objects: [link];"
 	    embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
       <a-assets>
-          <img id="vialactea" src="imagens/2k_stars_milky_way.jpg">
           <img id="sol" src="imagens/2k_sun.jpg">
           <img id="mercurio1" src="imagens/2k_mercury.jpg">
           <img id="venus1" src="imagens/2k_venus_atmosphere.jpg">
@@ -30,7 +29,6 @@
         <a-light type="ambient" intensity="1.3" color="grey"></a-light>
 
         <a-marker type="barcode" value="2">
-	<a-sky src="#vialactea"></a-sky>
 
 	   <a-entity position="0 0 0">
 		<a-sphere src="#sol" radius="1.5" mixin="esferas">
