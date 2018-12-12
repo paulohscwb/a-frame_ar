@@ -19,6 +19,7 @@
           <img id="urano1" src="imagens/2k_uranus.jpg">
           <img id="netuno1" src="imagens/2k_neptune.jpg">
 	  <img id="lua1" src="imagens/2k_moon.jpg">
+	  <img id="plutao1" src="imagens/2k_pluto.jpg">
 	  <a-mixin id="texto" text="width: 13; side:double; color: grey"></a-mixin>
   	  <a-mixin id="esferas" geometry="segments-width:100; segments-height:100;" material="side:double;"></a-mixin>
         </a-assets>
@@ -113,6 +114,15 @@
 			<a-text value="NETUNO" mixin="texto" position="20 0.6 0"></a-text>
 			<a-ring rotation="-90 0 0" radius-inner="20" radius-outer="20.02" color="grey" segments-theta="200"></a-ring>
 			<a-animation attribute="rotation" dur="190000" easing="linear" to="0 540 0" repeat="indefinite"></a-animation>
+		</a-entity>
+		
+		<a-entity id="plutao" rotation="0 220 0">
+			<a-sphere src="#plutao1" radius="0.07" position="26 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="PLUTAO" mixin="texto" position="26 0.3 0"></a-text>
+			<a-ring rotation="-90 0 0" side="double" radius-inner="26" radius-outer="26.02" color="grey" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="201232" easing="linear" to="0 580 0" repeat="indefinite"></a-animation>
 		</a-entity>
 	    </a-entity>
          </a-marker>
