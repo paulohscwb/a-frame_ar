@@ -19,96 +19,104 @@
           <img id="saturno_a" src="imagens/2k_saturn_ring_alpha.png">
           <img id="urano1" src="imagens/2k_uranus.jpg">
           <img id="netuno1" src="imagens/2k_neptune.jpg">
+	  <img id="lua1" src="imagens/2k_moon.jpg">
 	  <a-mixin id="texto" text="width: 13; side:double; color: grey">
+  	  <a-mixin id="esferas" geometry="segments-width:100; segments-height:100;" material="side:double;"></a-mixin>
         </a-assets>
 
         <a-entity camera></a-entity>
-
+	      
         <a-light type="spot" intensity="0.5" color="#eaeaea" position="0 10 0" angle="90" rotation="-90 0 0" penumbra="0.5"></a-light>
         <a-light type="ambient" intensity="1.3" color="grey"></a-light>
 
         <a-marker type="barcode" value="2">
-	<!--<a-sky src="#vialactea"></a-sky>-->
+	<a-sky src="#vialactea"></a-sky>
 
-          <a-entity position="0 0.5 0" scale="0.3 0.3 0.3">
-            <a-sphere src="#sol" radius="1.5">
-              <a-animation attribute="rotation" dur="100000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-            </a-sphere>
+	   <a-entity position="0 0 0">
+		<a-sphere src="#sol" radius="1.5" mixin="esferas">
+			<a-animation attribute="rotation" dur="100000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+		</a-sphere>
 
-            <a-entity id="mercurio" rotation="0 0 0">
-              <a-sphere src="#mercurio1" radius="0.15" position="3 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="MERCURIO" mixin="texto" position="3 0.3 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="3" radius-outer="3.04" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="60000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="mercurio" rotation="0 0 0">
+			<a-sphere src="#mercurio1" radius="0.1" position="3 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="MERCURIO" mixin="texto" position="3 0.2 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="3" radius-outer="3.02" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="20000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="venus" rotation="0 45 0">
-              <a-sphere src="#venus1" radius="0.25" position="5.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="VENUS" mixin="texto" position="5.25 0.4 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="5.22" radius-outer="5.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="60000" easing="linear" to="0 405 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="venus" rotation="0 45 0">
+			<a-sphere src="#venus1" radius="0.25" position="3.8 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="VENUS" mixin="texto" position="3.8 0.5 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="3.8" radius-outer="3.82" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="60000" easing="linear" to="0 405 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="terra" rotation="0 225 0">
-              <a-sphere src="#terra1" radius="0.25" position="7.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="TERRA" mixin="texto" position="7.25 0.4 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="7.22" radius-outer="7.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="70000" easing="linear" to="0 585 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="terra" rotation="0 225 0">
+			<a-sphere src="#terra1" radius="0.23" position="5.3 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+				<a-entity id="lua">
+					<a-sphere src="#lua1" radius="0.1" position="0.45 0 0" mixin="esferas">
+						<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+					</a-sphere>
+					<a-animation attribute="rotation" dur="7000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+				</a-entity>
+			</a-sphere>
+			<a-text value="TERRA" mixin="texto" position="5.3 0.4 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="5.3" radius-outer="5.32" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="80000" easing="linear" to="0 585 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="marte" rotation="0 90 0">
-              <a-sphere src="#marte1" radius="0.25" position="9.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="MARTE" mixin="texto" position="9.25 0.4 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="9.22" radius-outer="9.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="70000" easing="linear" to="0 450 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="marte" rotation="0 90 0">
+			<a-sphere src="#marte1" radius="0.21" position="6.8 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="MARTE" mixin="texto" position="6.8 0.4 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="6.8" radius-outer="6.82" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="100000" easing="linear" to="0 450 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="jupiter" rotation="0 270 0">
-              <a-sphere src="#jupiter1" radius="0.5" position="11.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="JUPITER" mixin="texto" position="11.25 0.65 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="11.22" radius-outer="11.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="80000" easing="linear" to="0 630 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="jupiter" rotation="0 270 0">
+			<a-sphere src="#jupiter1" radius="0.8" position="9.4 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="JUPITER" mixin="texto" position="9.4 1 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="9.4" radius-outer="9.42" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="120000" easing="linear" to="0 630 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="saturno" rotation="0 135 0">
-              <a-sphere src="#saturno1" radius="0.425" position="13.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-ring src="#saturno_a" radius-inner=".75" radius-outer="1.25" position="13.25 .01 0" rotation="90 0 0" side="double" transparent="true"></a-ring>
-              <a-text value="SATURNO" mixin="texto" position="13.25 0.6 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="13.22" radius-outer="13.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="80000" easing="linear" to="0 495 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="saturno" rotation="0 135 0">
+			<a-sphere src="#saturno1" radius="0.7" position="14 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-ring src="#saturno_a" radius-inner="1" radius-outer="1.5" position="14 0 0" rotation="90 0 0" side="double" transparent="true"></a-ring>
+			<a-text value="SATURNO" mixin="texto" position="14 1.4 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="14" radius-outer="14.02" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="160000" easing="linear" to="0 495 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="urano" rotation="0 315 0"> 
-              <a-sphere src="#urano1" radius="0.35" position="15.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-ring color="teal" radius-inner=".65" radius-outer=".655" position="15.25 .01 0" side="double" rotation="0 180 0"></a-ring>
-              <a-text value="URANO" mixin="texto" position="15.25 0.5 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="15.22" radius-outer="15.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="90000" easing="linear" to="0 675 0" repeat="indefinite"></a-animation>
-            </a-entity>
+		<a-entity id="urano" rotation="0 315 0"> 
+			<a-sphere src="#urano1" radius="0.3" position="17.5 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-ring color="teal" radius-inner=".65" radius-outer=".655" position="17.5 0 0" side="double" rotation="0 180 0"></a-ring>
+			<a-text value="URANO" mixin="texto" position="17.5 0.6 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="17.5" radius-outer="17.52" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="180000" easing="linear" to="0 675 0" repeat="indefinite"></a-animation>
+		</a-entity>
 
-            <a-entity id="netuno" rotation="0 180 0">
-              <a-sphere src="#netuno1" radius="0.35" position="17.25 0 0" side="double">
-                <a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
-              </a-sphere>
-              <a-text value="NETUNO" mixin="texto" position="17.25 0.5 0"></a-text>
-              <a-ring rotation="-90 0 0" radius-inner="17.22" radius-outer="17.26" color="grey" segments-theta="200"></a-ring>
-              <a-animation attribute="rotation" dur="90000" easing="linear" to="0 540 0" repeat="indefinite"></a-animation>
-            </a-entity>
-          </a-entity>
+		<a-entity id="netuno" rotation="0 180 0">
+			<a-sphere src="#netuno1" radius="0.32" position="20 0 0" mixin="esferas">
+				<a-animation attribute="rotation" dur="10000" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-sphere>
+			<a-text value="NETUNO" mixin="texto" position="20 0.6 0"></a-text>
+			<a-ring rotation="-90 0 0" radius-inner="20" radius-outer="20.02" color="white" segments-theta="200"></a-ring>
+			<a-animation attribute="rotation" dur="190000" easing="linear" to="0 540 0" repeat="indefinite"></a-animation>
+		</a-entity>
+	    </a-entity>
          </a-marker>
          
      </a-scene>
