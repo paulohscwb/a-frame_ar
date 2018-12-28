@@ -424,8 +424,41 @@
 	 </a-marker>
 	 
 	 <a-marker type="barcode" value="20">
+	    <a-entity id="marte2" position="0 0.5 0" scale="0.4 0.4 0.4">
+	       <a-entity id="linkVR" position="0 -2.5 0" scale="1 1 1" rotation="-90 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/s4.html; title: VR; highlighted:true; backgroundColor:LightGray;" material="opacity:0.2"></a-entity>
+	 	<a-sphere src="#sol" radius="2" mixin="esferas">
+			<a-animation mixin="anima1" dur="98296" from="7.25 0 0" to="7.25 360 0"></a-animation>
+		</a-sphere>
+		    
+		<a-entity id="marte" rotation="0 49.57 0" scale="1 1 0.98">
+			<a-entity rotation="1.9 0 0">
+				<a-cylinder position="-0.1 0 0" color="yellow" rotation="90 0 90" height="10.6" mixin="eixos"></a-cylinder>
+				<a-entity rotation="0 336 0">
+					<a-cylinder position="-0.1 0 0" color="red" rotation="90 0 90" height="10.6" mixin="eixos"></a-cylinder>
+					<a-text value="ph" mixin="texto" position="4.86 0.3 0"></a-text>
+					<a-text value="ap" mixin="texto" position="-5.34 0.3 0"></a-text>
+					<a-entity position="-0.24 0 0">
+						<a-entity rotation="0 12 0">
+							<a-sphere src="#marte1" radius="0.14" position="5.1 0 0" scale="1 1 1.004" mixin="esferas">
+								<a-animation mixin="anima1" dur="16780" from="25.19 0 0" to="25.19 360 0"></a-animation>
+							</a-sphere>
+							<a-cylinder color="green" position="5.1 0 0" height="0.6" mixin="eixos">
+								<a-animation mixin="anima1" dur="16780" from="25.19 0 0" to="25.19 360 0"></a-animation>
+							</a-cylinder>
+							<a-text value="MARS" mixin="texto" position="5.1 0.3 0"></a-text>
+						</a-entity>
+						<a-torus radius="5.1" mixin="anel"></a-torus>
+						<a-animation mixin="anima" dur="435492"></a-animation>
+					</a-entity>
+				</a-entity>
+			</a-entity>
+		</a-entity>
+	     </a-entity>
+	 </a-marker>
+	   
+	 <a-marker type="barcode" value="26">
 	    <a-entity id="saturno2" position="0 0.5 0" scale="0.4 0.4 0.4">
-	       <a-entity id="linkVR" position="0 -2.5 0" scale="1 1 1" rotation="-90 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/solar.html; title: VR; highlighted:true; backgroundColor:LightGray;" material="opacity:0.2"></a-entity>
+	       <a-entity id="linkVR" position="0 -2.5 0" scale="1 1 1" rotation="-90 0 0" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/s6.html; title: VR; highlighted:true; backgroundColor:LightGray;" material="opacity:0.2"></a-entity>
 	 	<a-sphere src="#sol" radius="2" mixin="esferas">
 			<a-animation mixin="anima1" dur="98296" from="7.25 0 0" to="7.25 360 0"></a-animation>
 		</a-sphere>
