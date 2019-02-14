@@ -267,7 +267,7 @@
 			<a-entity line="start: 2 0 2; end: 2 0 0; color: #6E6E6E"
 			line__6="start: 2 0 2; end: 0.75 0 3.2; color: #6E6E6E"></a-entity>
 
-			<a-entity position="-2.4 0 0" rotation="0 45 0" animation="property: rotation; to: 0 45 90; loop: false; dur: 10000; delay:3500;">
+			<a-entity position="-2.4 0 0" rotation="0 45 0" animation="property: rotation; to: 0 45 90; loop: true; dur: 10000; delay:3500;">
 				<a-entity id="planoPI3" faceset="vertices: 0 0 7  0 5 7  0 5 0  0 0 0" mixin="mtl0 mtl5"></a-entity>
 				<a-text position="0.1 4.5 5" value="pi''1" rotation="0 90 0" mixin="texto"></a-text>
 				
@@ -290,7 +290,7 @@
 	  <a-marker type="barcode" value="42">
 		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a_epura2.html"></a-link>
 		    <a-entity position="3 0 0" id="pg19epura" scale="0.5 0.5 0.5">  
-			<a-entity animation="property: rotation; to: 90 0 0; loop: false; dur: 10000; delay:3500;">
+			<a-entity animation="property: rotation; to: 90 0 0; loop: true; dur: 10000; delay:3500;">
 				<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0 mtl2"></a-entity>
 				<a-text position="4.2 0.1 4.4" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
 				
@@ -317,7 +317,7 @@
 				line__4="start: 0 0 5; end: 0 0 -5; color: green"></a-entity>
 			</a-entity>
 
-			<a-entity animation="property: rotation; to: 0 -90 0; loop: false; dur: 10000; delay:3500;">
+			<a-entity animation="property: rotation; to: 0 -90 0; loop: true; dur: 10000; delay:3500;">
 				<a-entity id="planoPI3" faceset="vertices: 0 -5 5  0 5 5  0 5 -5  0 -5 -5" mixin="mtl0 mtl5"></a-entity>
 				<a-text position="0.1 4.5 5" value="pi'''" rotation="0 90 0" mixin="texto"></a-text>
 				
@@ -384,7 +384,7 @@
 	  <a-marker type="barcode" value="41">
 		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a_epura1.html"></a-link>
 		    <a-entity position="3 0 0" id="pg16epura" scale="0.5 0.5 0.5">  
-			<a-entity animation="property: rotation; to: 90 0 0; loop: false; dur: 10000; delay:3500;">
+			<a-entity animation="property: rotation; to: 90 0 0; loop: true; dur: 10000; delay:3500;">
 				<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0 mtl2"></a-entity>
 				<a-text position="4.2 0.1 4.4" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
 				
@@ -462,6 +462,88 @@
 		</a-entity>
 	  </a-marker>	
 	
+	  <a-marker type="barcode" value="45">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a45.html"></a-link>
+		    <a-entity position="-7.5 0 0" id="pg44_piramidequadrada" scale="0.5 0.5 0.5">	  	
+	  		<a-entity faceset="vertices: 1 0 2  4 0 1  5 0 4  2 0 5  3 5 3; projectdir:y" 
+				mixin="mtl0 mtl2"></a-entity>
+			<a-entity id="arestas" line="start: 3 5 3; end: 1 0 2; color: #6E6E6E" line__2="start: 3 5 3; end: 4 0 1; color: #6E6E6E"
+				line__3="start: 3 5 3; end: 5 0 4; color: #6E6E6E" line__4="start: 3 5 3; end: 2 0 5; color: #6E6E6E;"
+				line__5="start: 1 0 2; end: 4 0 1; color: #6E6E6E" line__8="start: 4 0 1; end: 5 0 4; color: #6E6E6E"
+				line__6="start: 5 0 4; end: 2 0 5; color: #6E6E6E" line__7="start: 2 0 5; end: 1 0 2; color: #6E6E6E;">
+			</a-entity>
+			<a-text position="0.6 0 2" value="A" mixin="texto"></a-text>
+			<a-text position="4.1 0 1" value="B" mixin="texto"></a-text>
+			<a-text position="5 0 4" value="C" mixin="texto"></a-text>
+			<a-text position="1.6 0 5" value="D" mixin="texto"></a-text>
+			<a-text position="3 5.2 3" value="V" mixin="texto"></a-text>
+		</a-entity>
+	  </a-marker>
+	  
+	  <a-marker type="barcode" value="46">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a46.html"></a-link>
+		    <a-entity position="-7.5 0 0" id="pg44_piramidequadradaobliqua" scale="0.5 0.5 0.5">
+			<a-entity faceset="vertices: 2 1 0  4 1 2  2 1 4  0 1 2  6 6 1;" 
+				mixin="mtl0 mtl3"></a-entity>
+			<a-entity faceset="vertices: 0 1 2  2 1 4  4 1 2  6 6 1;" 
+				mixin="mtl0 mtl3"></a-entity>
+			<a-entity id="arestas" line="start: 6 6 1; end: 2 1 0; color: #6E6E6E" line__2="start: 6 6 1; end: 4 1 2; color: #6E6E6E"
+				line__3="start: 6 6 1; end: 2 1 4; color: #6E6E6E" line__4="start: 6 6 1; end: 0 1 2; color: #6E6E6E;"
+				line__5="start: 2 1 0; end: 4 1 2; color: #6E6E6E" line__8="start: 4 1 2; end: 2 1 4; color: #6E6E6E"
+				line__6="start: 2 1 4; end: 0 1 2; color: #6E6E6E" line__7="start: 0 1 2; end: 2 1 0; color: #6E6E6E;">
+			</a-entity>
+			<a-text position="2.1 1 0" value="A" mixin="texto"></a-text>
+			<a-text position="4 1 2" value="B" mixin="texto"></a-text>
+			<a-text position="2.1 1 4" value="C" mixin="texto"></a-text>
+			<a-text position="-0.4 1 2" value="D" mixin="texto"></a-text>
+			<a-text position="6 6 1" value="V" mixin="texto"></a-text>
+		</a-entity>
+	  </a-marker>
+	  
+	  <a-marker type="barcode" value="47">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a47.html"></a-link>
+		    <a-entity position="-7.5 0 0" id="pg45_tetraedro" scale="0.33 0.33 0.33">	  
+	  		<a-entity faceset="vertices: 1 0 2  5 0 6  6.4 0 0.5  4 4.5 2.8;" 
+				mixin="mtl0 mtl5"></a-entity>
+			<a-entity faceset="vertices: 1 0 2  5 0 6  6.4 0 0.5  4 4.5 2.8;" 
+				mixin="linhas"></a-entity>
+			<a-entity id="altura" line="start: 4 0 2.8; end: 4 4.5 2.8; color: red" line__2="start: 4 0 2.8; end: 1 0 2; color: grey"></a-entity>
+			<a-text position="0.6 0 2" value="A" mixin="texto"></a-text>
+			<a-text position="5 0 6" value="B" mixin="texto"></a-text>
+			<a-text position="6.4 0 0.5" value="C" mixin="texto"></a-text>
+			<a-text position="4 4.7 2.8" value="D" mixin="texto"></a-text>
+			<a-text position="3.6 2 2.8" value="h" mixin="texto"></a-text>
+		</a-entity>
+	  </a-marker>
+	  
+	  <a-marker type="barcode" value="48">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a48.html"></a-link>
+		    <a-entity position="-7.5 0 0" id="pg45_prismaTriangular" scale="0.5 0.5 0.5">	  
+	  		<a-entity id="ABC" faceset="vertices: 1 1 1  5.8 1 2.3  2.4 1 5.7;" 
+				mixin="mtl0 mtl4"></a-entity>
+			<a-entity id="DEF" faceset="vertices: 1 5 1  5.8 5 2.3  2.4 5 5.7;" 
+				mixin="mtl0 mtl4"></a-entity>
+			<a-entity id="ABED" faceset="vertices: 1 1 1  5.8 1 2.3  5.8 5 2.3  1 5 1;" 
+				mixin="mtl0 mtl4"></a-entity>
+			<a-entity id="BCFE" faceset="vertices: 5.8 1 2.3  2.4 1 5.7  2.4 5 5.7  5.8 5 2.3;" 
+				mixin="mtl0 mtl4"></a-entity>
+			<a-entity id="ACFD" faceset="vertices: 1 1 1  2.4 1 5.7  2.4 5 5.7  1 5 1;" 
+				mixin="mtl0 mtl4"></a-entity>
+			<a-entity id="arestas" line="start: 1 1 1; end: 5.8 1 2.3; color: #6E6E6E" line__2="start: 5.8 1 2.3; end: 2.4 1 5.7; color: #6E6E6E"
+				line__3="start: 2.4 1 5.7; end: 1 1 1; color: #6E6E6E" line__4="start: 1 5 1; end: 5.8 5 2.3; color: #6E6E6E;"
+				line__5="start: 5.8 5 2.3; end: 2.4 5 5.7; color: #6E6E6E" line__8="start: 2.4 5 5.7; end: 1 5 1; color: #6E6E6E"
+				line__6="start: 1 1 1; end: 1 5 1; color: #6E6E6E" line__7="start: 5.8 1 2.3; end: 5.8 5 2.3; color: #6E6E6E;"
+				line__10="start: 2.4 1 5.7; end: 2.4 5 5.7; color: #6E6E6E">
+			</a-entity>
+			<a-text position="0.6 1 1" value="A" mixin="texto"></a-text>
+			<a-text position="5.8 1 2.3" value="B" mixin="texto"></a-text>
+			<a-text position="2 1 5.7" value="C" mixin="texto"></a-text>
+			<a-text position="0.6 5 1" value="D" mixin="texto"></a-text>
+			<a-text position="5.8 5 2.3" value="E" mixin="texto"></a-text>
+			<a-text position="2 5 5.7" value="F" mixin="texto"></a-text>
+		</a-entity>
+	  </a-marker>
+	  
 	 <a-marker type="barcode" value="2">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a2.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="3.5 0 0" id="pg50_piramide_dupla" scale="0.5 0.5 0.5">
