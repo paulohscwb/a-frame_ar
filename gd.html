@@ -253,9 +253,201 @@
 	   </a-entity>
   	</a-marker>
 	
+	<a-marker type="barcode" value="43">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a_mpp1.html"></a-link>
+		    <a-entity position="3 0 0" id="pg30mpp" scale="0.5 0.5 0.5">  
+			<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 0  -5 0 0" mixin="mtl0 mtl2"></a-entity>
+			<a-text position="4.2 0.1 4.4" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
+			<a-entity id="planoPI2" faceset="vertices: -5 5 0  5 5 0  5 0 0  -5 0 0" mixin="mtl0 mtl3"></a-entity>
+			<a-text position="4.2 4.7 0.1" value="pi''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="2 0 2"></a-sphere>
+			<a-text position="2 0.1 2" value="A'" rotation="-90 0 0" mixin="texto"></a-text>
+			
+			<a-entity line="start: 2 0 2; end: 2 0 0; color: #6E6E6E"
+			line__6="start: 2 0 2; end: 0.75 0 3.2; color: #6E6E6E"></a-entity>
+
+			<a-entity position="-2.4 0 0" rotation="0 45 0" animation="property: rotation; to: 0 45 90; loop: false; dur: 10000; delay:3500;">
+				<a-entity id="planoPI3" faceset="vertices: 0 0 7  0 5 7  0 5 0  0 0 0" mixin="mtl0 mtl5"></a-entity>
+				<a-text position="0.1 4.5 5" value="pi''1" rotation="0 90 0" mixin="texto"></a-text>
+				
+				<a-sphere mixin="ponto" position="0 2 4.5"></a-sphere>
+				<a-text position="0.1 2 4.5" value="A''1" rotation="0 90 0" mixin="texto"></a-text>
+				
+				<a-entity line="start: 0 2 4.5; end: 0 0 4.5; color: #6E6E6E"></a-entity>
+			</a-entity>
+				
+			
+			<a-sphere mixin="ponto" position="2 2 2"></a-sphere>
+			<a-text position="2 2 2" value="A" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="2 2 0"></a-sphere>
+			<a-text position="2 2 0" value="A''" mixin="texto"></a-text>
+			
+			<a-entity line__2="start: 2 2 0; end: 2 0 0; color: #6E6E6E"></a-entity>
+		</a-entity>
+	  </a-marker>
+	 
+	  <a-marker type="barcode" value="42">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a_epura2.html"></a-link>
+		    <a-entity position="3 0 0" id="pg19epura" scale="0.5 0.5 0.5">  
+			<a-entity animation="property: rotation; to: 90 0 0; loop: false; dur: 10000; delay:3500;">
+				<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0 mtl2"></a-entity>
+				<a-text position="4.2 0.1 4.4" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
+				
+				<a-text position="4.4 0.1 0.5" value="x" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-text position="0 0.1 4.5" value="y" rotation="-90 0 0" mixin="texto"></a-text>
+
+				<a-sphere mixin="ponto" position="2 0 3"></a-sphere>
+				<a-text position="2 0.1 3" value="A'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="1 0 -2"></a-sphere>
+				<a-text position="1 0.1 -2" value="B'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="4 0 -1"></a-sphere>
+				<a-text position="4 0.1 -1" value="C'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="3 0 3.5"></a-sphere>
+				<a-text position="3 0.1 3.5" value="D'" rotation="-90 0 0" mixin="texto"></a-text>
+				
+				<a-entity line="start: 2 0 3; end: 2 0 0; color: #6E6E6E"
+				line__6="start: 2 0 3; end: 0 0 3; color: #6E6E6E"
+				line__2="start: 1 0 -2; end: 1 0 0; color: #6E6E6E"
+				line__7="start: 1 0 -2; end: 0 0 -2; color: #6E6E6E"
+				line__3="start: 4 0 -1; end: 4 0 0; color: #6E6E6E"
+				line__8="start: 4 0 -1; end: 0 0 -1; color: #6E6E6E"
+				line__5="start: 3 0 3.5; end: 3 0 0; color: #6E6E6E"
+				line__9="start: 3 0 3.5; end: 0 0 3.5; color: #6E6E6E"
+				line__4="start: 0 0 5; end: 0 0 -5; color: green"></a-entity>
+			</a-entity>
+
+			<a-entity animation="property: rotation; to: 0 -90 0; loop: false; dur: 10000; delay:3500;">
+				<a-entity id="planoPI3" faceset="vertices: 0 -5 5  0 5 5  0 5 -5  0 -5 -5" mixin="mtl0 mtl5"></a-entity>
+				<a-text position="0.1 4.5 5" value="pi'''" rotation="0 90 0" mixin="texto"></a-text>
+				
+				<a-text position="0 0.1 4.5" value="y" rotation="-90 0 0" mixin="texto"></a-text>
+			
+				<a-sphere mixin="ponto" position="0 2 3"></a-sphere>
+				<a-text position="0.1 2 3" value="A'''" rotation="0 90 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="0 1.5 -2"></a-sphere>
+				<a-text position="0.1 1.5 -2" value="B'''" rotation="0 90 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="0 -2 -1"></a-sphere>
+				<a-text position="0.1 -2 -1" value="C'''" rotation="0 90 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="0 -2.5 3.5"></a-sphere>
+				<a-text position="0.1 -2.5 3.5" value="D'''" rotation="0 90 0" mixin="texto"></a-text>
+				
+				<a-entity line="start: 0 2 3; end: 0 0 3; color: #6E6E6E"
+				line__1="start: 0 2 3; end: 0 2 0; color: #6E6E6E"
+				line__2="start: 0 1.5 -2; end: 0 0 -2; color: #6E6E6E"
+				line__6="start: 0 1.5 -2; end: 0 1.5 0; color: #6E6E6E"
+				line__3="start: 0 -2 -1; end: 0 0 -1; color: #6E6E6E"
+				line__7="start: 0 -2 -1; end: 0 -2 0; color: #6E6E6E"
+				line__5="start: 0 -2.5 3.5; end: 0 0 3.5; color: #6E6E6E"
+				line__8="start: 0 -2.5 3.5; end: 0 -2.5 0; color: #6E6E6E"
+				line__4="start: 0 0 5; end: 0 0 -5; color: green"></a-entity>
+			</a-entity>
+				
+			<a-entity id="planoPI2" faceset="vertices: -5 5 0  5 5 0  5 -5 0  -5 -5 0" mixin="mtl0 mtl3"></a-entity>
+			<a-text position="4.2 4.7 0.1" value="pi''" mixin="texto"></a-text>
+			
+			<a-text position="0 4.8 0" value="z" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="2 2 3"></a-sphere>
+			<a-text position="2 2 3" value="A" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="2 2 0"></a-sphere>
+			<a-text position="2 2 0" value="A''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="1 1.5 -2"></a-sphere>
+			<a-text position="1 1.5 -2" value="B" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="1 1.5 0"></a-sphere>
+			<a-text position="1 1.5 0" value="B''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="4 -2 -1"></a-sphere>
+			<a-text position="4 -2 -1" value="C" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="4 -2 0"></a-sphere>
+			<a-text position="4 -2 0" value="C''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="3 -2.5 3.5"></a-sphere>
+			<a-text position="3 -2.5 3.5" value="D" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="3 -2.5 0"></a-sphere>
+			<a-text position="3 -2.5 0" value="D''" mixin="texto"></a-text>
+			
+			<a-entity line__2="start: 2 2 0; end: 2 0 0; color: #6E6E6E"
+			line__7="start: 2 2 0; end: 0 2 0; color: #6E6E6E"
+			line__3="start: 1 1.5 0; end: 1 0 0; color: #6E6E6E"
+			line__8="start: 1 1.5 0; end: 0 1.5 0; color: #6E6E6E"
+			line__4="start: 4 -2 0; end: 4 0 0; color: #6E6E6E"
+			line__9="start: 4 -2 0; end: 0 -2 0; color: #6E6E6E"
+			line__6="start: 3 -2.5 0; end: 3 0 0; color: #6E6E6E"
+			line__10="start: 3 -2.5 0; end: 0 -2.5 0; color: #6E6E6E"
+			line__5="start: -5 0 0; end: 5 0 0; color: red"
+			line__1="start: 0 -5 0; end: 0 5 0; color: blue"></a-entity>
+		</a-entity>
+	  </a-marker>
+	  
+	  <a-marker type="barcode" value="41">
+		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a_epura1.html"></a-link>
+		    <a-entity position="3 0 0" id="pg16epura" scale="0.5 0.5 0.5">  
+			<a-entity animation="property: rotation; to: 90 0 0; loop: false; dur: 10000; delay:3500;">
+				<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0 mtl2"></a-entity>
+				<a-text position="4.2 0.1 4.4" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
+				
+				<a-text position="4.4 0.1 0.5" value="x" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-text position="0 0.1 4.5" value="y" rotation="-90 0 0" mixin="texto"></a-text>
+
+				<a-sphere mixin="ponto" position="2 0 3"></a-sphere>
+				<a-text position="2 0.1 3" value="A'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="1 0 -2"></a-sphere>
+				<a-text position="1 0.1 -2" value="B'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="4 0 -1"></a-sphere>
+				<a-text position="4 0.1 -1" value="C'" rotation="-90 0 0" mixin="texto"></a-text>
+				<a-sphere mixin="ponto" position="3 0 3.5"></a-sphere>
+				<a-text position="3 0.1 3.5" value="D'" rotation="-90 0 0" mixin="texto"></a-text>
+				
+				<a-entity line="start: 2 0 3; end: 2 0 0; color: #6E6E6E"
+				line__2="start: 1 0 -2; end: 1 0 0; color: #6E6E6E"
+				line__3="start: 4 0 -1; end: 4 0 0; color: #6E6E6E"
+				line__5="start: 3 0 3.5; end: 3 0 0; color: #6E6E6E"
+				line__4="start: 0 0 5; end: 0 0 -5; color: green"></a-entity>
+			</a-entity>
+			
+			<a-entity id="planoPI2" faceset="vertices: -5 5 0  5 5 0  5 -5 0  -5 -5 0" mixin="mtl0 mtl3"></a-entity>
+			<a-text position="4.2 4.7 0.1" value="pi''" mixin="texto"></a-text>
+			
+			<a-text position="0 4.8 0" value="z" mixin="texto"></a-text>
+			<a-text position="-2 2.5 2.5" value="1o diedro" mixin="texto"></a-text>
+			<a-text position="-2 2.5 -2.5" value="2o diedro" mixin="texto"></a-text>
+			<a-text position="-2 -2.5 -2.5" value="3o diedro" mixin="texto"></a-text>
+			<a-text position="-2 -2.5 2.5" value="4o diedro" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="2 2 3"></a-sphere>
+			<a-text position="2 2 3" value="A" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="2 2 0"></a-sphere>
+			<a-text position="2 2 0" value="A''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="1 1.5 -2"></a-sphere>
+			<a-text position="1 1.5 -2" value="B" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="1 1.5 0"></a-sphere>
+			<a-text position="1 1.5 0" value="B''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="4 -2 -1"></a-sphere>
+			<a-text position="4 -2 -1" value="C" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="4 -2 0"></a-sphere>
+			<a-text position="4 -2 0" value="C''" mixin="texto"></a-text>
+			
+			<a-sphere mixin="ponto" position="3 -2.5 3.5"></a-sphere>
+			<a-text position="3 -2.5 3.5" value="D" mixin="texto"></a-text>
+			<a-sphere mixin="ponto" position="3 -2.5 0"></a-sphere>
+			<a-text position="3 -2.5 0" value="D''" mixin="texto"></a-text>
+			
+			<a-entity line__2="start: 2 2 0; end: 2 0 0; color: #6E6E6E"
+			line__3="start: 1 1.5 0; end: 1 0 0; color: #6E6E6E"
+			line__4="start: 4 -2 0; end: 4 0 0; color: #6E6E6E"
+			line__6="start: 3 -2.5 0; end: 3 0 0; color: #6E6E6E"
+			line__5="start: -5 0 0; end: 5 0 0; color: red"
+			line__1="start: 0 -5 0; end: 0 5 0; color: blue"></a-entity>
+		</a-entity>
+	  </a-marker>
+	  
 	<a-marker type="barcode" value="44">
 		  <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_gd/a44.html"></a-link>
-		    <a-entity position="-6 0 0" id="pg43_piramidehexagonal" scale="0.5 0.5 0.5">  
+		    <a-entity position="-4.5 0 0" id="pg43_piramidehexagonal" scale="0.5 0.5 0.5">  
 			<a-entity faceset="vertices: 1 0 1  -3 0 0  -5.9 0 3  -4.7 0 6.9  -0.7 0 7.9  2.1 0 4.9  -1.9 5 4;" 
 				mixin="mtl0 mtl1"></a-entity>
 			<a-entity faceset="vertices: 1 0 1  -3 0 0  -5.9 0 3  -4.7 0 6.9  -0.7 0 7.9  2.1 0 4.9  -1.9 5 4;" 
