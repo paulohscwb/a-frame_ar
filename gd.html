@@ -24,13 +24,13 @@
 		<a-mixin id="texto" text="width: 11; side:double; color: black"></a-mixin>
 		<a-mixin id="reta" geometry="radius:0.04;" mixin="mtl1"></a-mixin>
 	  	<a-mixin id="ponto" geometry="radius:0.1;" mixin="mtl8"></a-mixin>
-		<a-mixin id="lnk" rotation="-90 0 0" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-mixin>		
+
 	</a-assets>
 	
 	<a-entity camera></a-entity>
 
 	<a-marker type="barcode" value="32">
-	   <a-link mixin="lnk" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p1.html"></a-link>
+	   <a-link href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p1.html" rotation="-90 0 0" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-3 0.5 0" id="prop1" scale="0.5 0.5 0.5">
      		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
 			
