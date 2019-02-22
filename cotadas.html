@@ -10,7 +10,8 @@
   <a-scene cursor="rayOrigin: mouse" raycaster="objects: [link];" 
 	   embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 	<a-assets>
-		<a-mixin id="mtl0" material="opacity: 0.4; side: double; metalness:0.3; roughness:0.9;"></a-mixin>
+		<a-mixin id="mtl0" material="opacity: 0.7; side: double; metalness:0.3; roughness:0.9;"></a-mixin>
+		<a-mixin id="mtl0p" material="opacity: 0.4; side: double; metalness:0.3; roughness:0.9;"></a-mixin>
 		<a-mixin id="mtl1" material="color: #4b97ee;"></a-mixin>
 		<a-mixin id="mtl2" material="color: #ee514b"></a-mixin>
 		<a-mixin id="mtl3" material="color: #1E9961;"></a-mixin>
@@ -31,7 +32,7 @@
 	 <a-marker type="barcode" value="32">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p1.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-3 0.5 0" id="prop1" scale="0.5 0.5 0.5">
-     		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+     		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 			
 		<a-sphere mixin="ponto" position="-3 0 2"></a-sphere>
 		<a-text position="-3.5 0.15 2" value="A'" mixin="texto"></a-text>
@@ -60,7 +61,7 @@
 	 <a-marker type="barcode" value="34">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p1a.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="3 0.5 0" id="prop1a" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-sphere mixin="ponto" position="-0.5 0 2"></a-sphere>
@@ -82,7 +83,7 @@
 	<a-marker type="barcode" value="36">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p2.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="3 0.5 0" id="prop2" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-sphere mixin="ponto" position="-3 0 2"></a-sphere>
@@ -126,7 +127,7 @@
 	<a-marker type="barcode" value="37">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p2a.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-3 0.5 0" id="prop2a" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-text position="-4 6 0.58" value="s" mixin="texto"></a-text>
@@ -145,7 +146,7 @@
 	<a-marker type="barcode" value="44">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p_ex5a_hexagono.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-4 0.5 0" id="p_ex5a_hexagono" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-entity position="-1 0 -3">
@@ -198,7 +199,7 @@
 	<a-marker type="barcode" value="38">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p_ex5c_hexagono.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-4 0.5 0" id="p_ex5c_hexagono" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-entity position="-2 0 1">
@@ -251,7 +252,7 @@
 	<a-marker type="barcode" value="39">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p_ex4c_triangulo.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="-3 0.5 0" id="p_ex4c_triangulo" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-entity position="1 0 1">
@@ -286,7 +287,7 @@
 	<a-marker type="barcode" value="40">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/p7.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="3 0.5 0" id="p7" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-text position="-4.3 0.21 2" value="r'" mixin="texto"></a-text>
@@ -308,7 +309,7 @@
 	<a-marker type="barcode" value="41">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/exerc_epura.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="0.75 0.5 0" id="exerc_epura" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -2 0 2  10 0 2  10 0 -9  -2 0 -9" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -2 0 2  10 0 2  10 0 -9  -2 0 -9" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="9 0.32 8.7" value="pi'" mixin="texto"></a-text>
 
 		<a-sphere mixin="ponto" position="4 2 -3"></a-sphere>
@@ -348,7 +349,7 @@
 	<a-marker type="barcode" value="42">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/vg_segmento.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="3 0.5 0" id="vg_segmento" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0 mtl2"></a-entity>
+		<a-entity id="planoPI" faceset="vertices: -5 0 -5  5 0 -5  5 0 5  -5 0 5" mixin="mtl0p mtl2"></a-entity>
 		<a-text position="4.5 0.32 4.8" value="pi'" mixin="texto"></a-text>
 
 		<a-entity position="0 0 -1">
@@ -494,8 +495,8 @@
 	<a-marker type="barcode" value="46">
 	   <a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/rebatimento.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 	   <a-entity position="4.5 0.5 0" id="rebatimento" scale="0.5 0.5 0.5">		
-		<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0 mtl2"></a-entity>
-			<a-text position="4 0.1 4.7" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
+		<a-entity id="planoPI" faceset="vertices: -5 0 5  5 0 5  5 0 -5  -5 0 -5" mixin="mtl0p mtl2"></a-entity>
+		<a-text position="4 0.1 4.7" value="pi'" rotation="-90 0 0" mixin="texto"></a-text>
 
 		<a-entity rotation="0 -30 0">
 
@@ -532,13 +533,13 @@
 			<a-text position="0.1 4.2 0" value="P" mixin="texto"></a-text>
 			<a-sphere mixin="ponto" position="0 0 0"></a-sphere>
 			<a-text position="-0.8 0.31 0.1" value="O'P" mixin="texto"></a-text>
-			<a-entity id="planoPI2" faceset="vertices: -5.7 6 0  5.7 6 0  5.7 -3 0  -5.7 -3 0" mixin="mtl0 mtl1"></a-entity>
+			<a-entity id="planoPI2" faceset="vertices: -5.7 6 0  5.7 6 0  5.7 -3 0  -5.7 -3 0" mixin="mtl0p mtl1"></a-entity>
 			<a-text position="4 4.8 0.1" value="alfa" mixin="texto"></a-text>
 
 			<a-entity animation="property: rotation; to: 120 0 0; loop: true; dur: 10000; delay:3500;">
 			<a-entity animation="property: position; from: 0 0 0; to: 0 0 -0.01; loop: true; dur: 10000; delay:3500;">
 
-				<a-entity id="planoPI2" faceset="vertices: -5.7 6 0  5.7 6 0  5.7 -3 0  -5.7 -3 0" mixin="mtl0 mtl1"></a-entity>
+				<a-entity id="planoPI2" faceset="vertices: -5.7 6 0  5.7 6 0  5.7 -3 0  -5.7 -3 0" mixin="mtl0p mtl1"></a-entity>
 				<a-text position="4 4.8 -0.1" value="alfa" mixin="texto"></a-text>
 
 				<a-sphere mixin="ponto" position="0 4 0"></a-sphere>
