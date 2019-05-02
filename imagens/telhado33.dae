@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 17.2.2555</authoring_tool>
         </contributor>
-        <created>2019-05-02T14:28:04Z</created>
-        <modified>2019-05-02T14:28:04Z</modified>
+        <created>2019-05-02T14:38:17Z</created>
+        <modified>2019-05-02T14:38:17Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -1614,7 +1614,7 @@
                     </bind_material>
                 </instance_geometry>
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>0.9862078 -0.04021178 0.1605528 125.6841 0.1655119 0.2396032 -0.9566588 -762.1884 0 0.9700378 0.2429541 249.4173 0 0 0 1</matrix>
+                    <matrix>0.9512213 -0.09429801 0.2937446 220.9025 0.3085093 0.2907474 -0.9056975 -718.3823 0 0.9521417 0.3056569 286.5364 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
             </node>
@@ -3341,7 +3341,7 @@
                 </triangles>
                 <lines count="8" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID307" />
-                    <p>16 17 18 16 19 18 17 19</p>
+                    <p />
                 </lines>
             </mesh>
         </geometry>
@@ -3392,7 +3392,7 @@
                 </triangles>
                 <lines count="9" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID318" />
-                    <p>6 7 8 6 8 7 6 17 7 18 17 18 17 27 27 8 18 27</p>
+                    <p>6 7 8 6 6 17 17 18 17 27</p>
                 </lines>
             </mesh>
         </geometry>
