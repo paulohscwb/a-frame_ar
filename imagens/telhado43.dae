@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 17.2.2555</authoring_tool>
         </contributor>
-        <created>2019-05-02T11:28:06Z</created>
-        <modified>2019-05-02T11:28:06Z</modified>
+        <created>2019-05-02T11:52:49Z</created>
+        <modified>2019-05-02T11:52:49Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -816,7 +816,7 @@
                     </bind_material>
                 </instance_geometry>
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>-0.5398177 0.2373547 -0.8076259 -638.0392 -0.841782 -0.1522108 0.5179141 377.2165 2.775558e-17 0.9594241 0.281967 325.8324 0 0 0 1</matrix>
+                    <matrix>-0.3450148 -0.2439054 0.9063526 989.131 0.9385973 -0.08965608 0.3331621 342.6136 0 0.9656458 0.2598616 344.7246 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
             </node>
@@ -2283,7 +2283,7 @@
                 </triangles>
                 <lines count="23" material="Material5">
                     <input offset="0" semantic="VERTEX" source="#ID257" />
-                    <p>34 35 36 34 36 80 81 34 122 123 124 123 35 124 81 159 160 159 160 161 161 122</p>
+                    <p />
                 </lines>
                 <lines count="35" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID257" />
@@ -2337,7 +2337,7 @@
                 </triangles>
                 <lines count="31" material="Material5">
                     <input offset="0" semantic="VERTEX" source="#ID267" />
-                    <p>11 9 50 52 52 53 54 53 54 11 50 75 100 99 101 100 101 75 109 99 148 149 149 109 169 170 149 169</p>
+                    <p />
                 </lines>
                 <lines count="27" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID267" />
@@ -2381,7 +2381,7 @@
                 </triangles>
                 <lines count="57" material="Material5">
                     <input offset="0" semantic="VERTEX" source="#ID277" />
-                    <p>12 13 13 14 14 15 15 16 16 17 12 17 39 14 40 39 40 15 71 12 13 72 71 72 15 83 83 84 85 84 14 85 96 97 85 96 97 84 137 136 158 137 136 158 179 158 179 180 137 180 191 192 136 192 193 137 191 193 179 97 96 180</p>
+                    <p />
                 </lines>
                 <lines count="10" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID277" />
@@ -2519,7 +2519,7 @@
                 </triangles>
                 <lines count="19" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID302" />
-                    <p>14 15 14 16 16 17 17 18 18 19 20 19 15 20 19 37 38 37 38 39 39 40 40 14 16 59 60 59 61 60 62 61 37 62 62 71 71 38</p>
+                    <p>18 19 20 19 19 37 38 37 37 62</p>
                 </lines>
             </mesh>
         </geometry>
@@ -2569,7 +2569,7 @@
                 </triangles>
                 <lines count="19" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID310" />
-                    <p>38 39 40 38 41 40 39 41 42 43 44 42 45 44 46 45 46 47 48 47 49 48 50 49 50 51 51 52 53 52 54 53 55 54 56 55 43 56</p>
+                    <p>38 39 40 38 41 40 39 41</p>
                 </lines>
             </mesh>
         </geometry>
@@ -2609,7 +2609,7 @@
                 </triangles>
                 <lines count="5" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID318" />
-                    <p>11 14</p>
+                    <p />
                 </lines>
             </mesh>
         </geometry>
@@ -2827,7 +2827,7 @@
                 </triangles>
                 <lines count="7" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID357" />
-                    <p>6 7 7 8 8 6 7 19 20 19 20 21 21 8</p>
+                    <p />
                 </lines>
             </mesh>
         </geometry>
@@ -2923,7 +2923,7 @@
                 </triangles>
                 <lines count="7" material="Material4">
                     <input offset="0" semantic="VERTEX" source="#ID376" />
-                    <p>42 41 42 8</p>
+                    <p />
                 </lines>
                 <lines count="9" material="Material3">
                     <input offset="0" semantic="VERTEX" source="#ID376" />
