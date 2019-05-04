@@ -20,6 +20,13 @@
 		<a-asset-item id="telhado44" src="./imagens/telhado44.dae"></a-asset-item>
 		<a-asset-item id="telhado45" src="./imagens/telhado45.dae"></a-asset-item>
 		<a-asset-item id="telhado46" src="./imagens/telhado46.dae"></a-asset-item>
+		<a-asset-item id="modelo" src="./imagens/montanha1.dae"></a-asset-item>
+		<a-asset-item id="modelo0" src="./imagens/montanha3.dae"></a-asset-item>
+		<a-asset-item id="modelo1" src="./imagens/timbo1.dae"></a-asset-item>
+		<a-asset-item id="modelo2" src="./imagens/timbo2.dae"></a-asset-item>
+		<a-asset-item id="modelo3" src="./imagens/ausentes1.dae"></a-asset-item>
+		<a-asset-item id="modelo4" src="./imagens/ausentes2.dae"></a-asset-item>
+		<a-asset-item id="modelo6" src="./imagens/ausentes4.dae"></a-asset-item>
 	</a-assets>
 	  
 	<a-entity camera></a-entity>	
@@ -94,13 +101,63 @@
 		</a-entity>
   	 </a-marker>
 	
-	<a-marker type="barcode" value="9">
+	<a-marker type="barcode" value="11">
 	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/telhado46.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 		<a-entity position="-5 0 -5" id="telhado46" scale="0.5 0.5 0.5">
 			<a-entity collada-model="#telhado46"></a-entity>
 		</a-entity>
   	 </a-marker>
 	
+	 <a-marker type="barcode" value="9">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno1.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="montanha1" scale="0.005 0.005 0.005">
+			<a-entity collada-model="#modelo"></a-entity>
+		</a-entity>
+  	 </a-marker>
+							 
+	 <a-marker type="barcode" value="58">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno2.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="montanha0" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo3"></a-entity>
+		</a-entity>
+  	 </a-marker>
+	
+	<a-marker type="barcode" value="59">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno3.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="timbo1" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo1"></a-entity>
+		</a-entity>
+  	 </a-marker>
+		
+	<a-marker type="barcode" value="60">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno4.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="timbo2" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo2"></a-entity>
+		</a-entity>
+  	 </a-marker>
+		
+	<a-marker type="barcode" value="61">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno5.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="ausentes2" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo3"></a-entity>
+		</a-entity>
+  	 </a-marker>
+	
+	<a-marker type="barcode" value="62">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno6.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="ausentes4" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo4"></a-entity>
+		</a-entity>
+  	 </a-marker>
+	
+	<a-marker type="barcode" value="63">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/terreno8.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-5 0 -5" id="ausentes3" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo6"></a-entity>
+		</a-entity>
+  	 </a-marker>
+	  
+	  
   </a-scene>
 </body>
 </html>
