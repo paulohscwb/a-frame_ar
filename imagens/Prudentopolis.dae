@@ -2224,11 +2224,14 @@
         <effect id="ID15">
             <profile_COMMON>
                 <technique sid="COMMON">
-                    <lambert>
-                        <diffuse>
-                            <color>1 1 0 1</color>
-                        </diffuse>
-                    </lambert>
+                    <constant>
+                        <transparent opaque="RGB_ZERO">
+                            <color>0 0 0 1</color>
+                        </transparent>
+                        <transparency>
+                            <float>1</float>
+                        </transparency>
+                    </constant>
                 </technique>
             </profile_COMMON>
         </effect>
