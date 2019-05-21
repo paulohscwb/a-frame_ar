@@ -15,6 +15,7 @@
 		<a-asset-item id="modelo2" src="./imagens/adrianopolis2.dae"></a-asset-item>
 		<a-asset-item id="modelo1" src="./imagens/RioRastro2.dae"></a-asset-item>
 		<a-asset-item id="modelo5" src="./imagens/curva16.dae"></a-asset-item>
+		<a-asset-item id="modelo6" src="./imagens/curva13c.dae"></a-asset-item>
 	</a-assets>
 	  
 	<a-entity camera></a-entity>	
@@ -60,6 +61,14 @@
 			<a-entity collada-model="#modelo5"></a-entity>
 		</a-entity>
   	 </a-marker>
+	  
+	 <a-marker type="barcode" value="58">
+	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/curva13c.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
+		<a-entity position="-3 0 -3" id="curva13c" scale="0.0045 0.0045 0.0045">
+			<a-entity collada-model="#modelo6"></a-entity>
+		</a-entity>
+  	 </a-marker>
+	  
 	  
   </a-scene>
 </body>
