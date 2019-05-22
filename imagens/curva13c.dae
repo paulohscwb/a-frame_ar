@@ -1755,7 +1755,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.85 0.85 1 1</color>
+                            <color>0.8 0.8 1 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
@@ -1777,7 +1777,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.85 0.85 1 1</color>
+                            <color>0.8 0.8 1 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
