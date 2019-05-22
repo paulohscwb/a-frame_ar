@@ -2901,7 +2901,11 @@
         <effect id="ID10">
             <profile_COMMON>
                 <technique sid="COMMON">
-                    <color>0.95 0.95 1 1</color>
+                    <lambert>
+                        <diffuse>
+                            <color>0.95 0.95 1 1</color>
+                        </diffuse>
+                    </lambert>
                 </technique>
             </profile_COMMON>
         </effect>
@@ -2940,7 +2944,11 @@
         <effect id="ID32">
             <profile_COMMON>
                 <technique sid="COMMON">
-                    <color>0.95 0.95 1 1</color>
+                    <lambert>
+                        <diffuse>
+                            <color>0.95 0.95 1 1</color>
+                        </diffuse>
+                    </lambert>
                 </technique>
             </profile_COMMON>
         </effect>
