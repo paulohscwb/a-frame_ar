@@ -5986,7 +5986,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.95 0.95 1 1</color>
+                            <color>0.2 0.2 0 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
