@@ -8000,7 +8000,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.2 0.2 0 1</color>
+                            <color>0.5 0.5 0 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
@@ -8009,14 +8009,11 @@
         <effect id="ID16">
             <profile_COMMON>
                 <technique sid="COMMON">
-                    <constant>
-                        <transparent opaque="A_ONE">
-                            <color>0.4705882 0.2745098 0.145098 1</color>
-                        </transparent>
-                        <transparency>
-                            <float>1</float>
-                        </transparency>
-                    </constant>
+                    <lambert>
+                        <diffuse>
+                            <color>0.5 0.5 0 1</color>
+                        </diffuse>
+                    </lambert>
                 </technique>
             </profile_COMMON>
         </effect>
@@ -8174,14 +8171,11 @@
         <effect id="ID270">
             <profile_COMMON>
                 <technique sid="COMMON">
-                    <constant>
-                        <transparent opaque="A_ONE">
-                            <color>0.6352941 0.4509804 0.3882353 1</color>
-                        </transparent>
-                        <transparency>
-                            <float>1</float>
-                        </transparency>
-                    </constant>
+                    <lambert>
+                        <diffuse>
+                            <color>0.5 0.5 0 1</color>
+                        </diffuse>
+                    </lambert>
                 </technique>
             </profile_COMMON>
         </effect>
