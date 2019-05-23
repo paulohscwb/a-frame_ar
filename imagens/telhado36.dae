@@ -5986,7 +5986,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.5 0.5 0 1</color>
+                            <color>0.2 0.2 0.6 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
@@ -6052,7 +6052,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.5 0.5 0 1</color>
+                            <color>0.2 0.2 0.6 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
@@ -6084,7 +6084,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.5 0.5 0 1</color>
+                            <color>0.2 0.2 0.6 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
@@ -6095,7 +6095,7 @@
                 <technique sid="COMMON">
                     <lambert>
                         <diffuse>
-                            <color>0.5 0.5 0 1</color>
+                            <color>0.2 0.2 0.6 1</color>
                         </diffuse>
                     </lambert>
                 </technique>
