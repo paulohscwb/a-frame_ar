@@ -2,13 +2,13 @@
 <html>
 <head>
 	<script src="https://aframe.io/releases/0.9.0/aframe.js"></script>
-	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 	<script src="faceset.js"></script>
 	<script src="aframe-plot-component.min.js"></script>
 </head>
 <body style='margin: 0; overflow: hidden;'>
   <a-scene cursor="rayOrigin: mouse" raycaster="objects: [link];" 
-	   embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+	   embedded arjs='sourceType: webcam; trackingMethod: best; maxDetectionRate: 10; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
      
      <a-assets>
 			<a-mixin id="mtl0" material="opacity: 0.7; side: double; metalness:0.3; roughness:0.1;"></a-mixin>
