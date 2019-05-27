@@ -6,7 +6,7 @@
 </head>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene cursor="rayOrigin: mouse" raycaster="objects: [link];" 
-	   embedded arjs='sourceType: webcam; trackingMethod: best; maxDetectionRate: 20; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+	   embedded arjs='sourceType: webcam; trackingMethod: best; maxDetectionRate: 10; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 	
 	<a-assets>
 		<a-asset-item id="modelo" src="./imagens/Prudentopolis.dae"></a-asset-item>
@@ -62,7 +62,7 @@
 		</a-entity>
   	 </a-marker>
 	  
-	 <a-marker preset="hiro">
+	 <a-marker type="barcode" value="20">
 	   	<a-link rotation="-90 0 0" href="http://www.degraf.ufpr.br/docentes/paulo/lightbox/arquivos_cotadas/curva13c.html" title="VR" scale="0.5 0.5 0.5" position="0 0.1 0" link="highlighted:true; backgroundColor:LightGray"></a-link>
 		<a-entity position="-3.7 0 -5.5" id="curva13c" scale="0.0045 0.0045 0.0045">
 			<a-entity collada-model="#modelo6"></a-entity>
