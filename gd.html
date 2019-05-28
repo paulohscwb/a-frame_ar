@@ -27,7 +27,8 @@
 	  	<a-mixin id="ponto" geometry="radius:0.1;" mixin="mtl8"></a-mixin>
 		<a-mixin id="lnk" rotation="-90 0 0" scale="0.5 0.5 0.5" position="0 0.1 0" link="title: VR; highlighted:true; backgroundColor:LightGray"></a-mixin>
 	</a-assets>
-	
+	<a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2"
+          position="0 10 10"></a-entity>
 	<a-entity camera></a-entity>
 
 	<a-marker type="barcode" value="32">
