@@ -10,7 +10,7 @@
 	    embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
         <a-assets>
             <a-asset-item id="catedral" src="./imagens/notre.dae"></a-asset-item>
-            <a-asset-item id="torres" src="./imagens/torres.dae"></a-asset-item>
+            <a-asset-item id="torres" src="./imagens/torres.glb"></a-asset-item>
 	    <a-asset-item id="aviao" src="./imagens/aviao.glb"></a-asset-item>
 	    <a-asset-item id="conjunto" src="./imagens/conjunto.dae"></a-asset-item>
 	    <a-asset-item id="arena" src="./imagens/arena.dae"></a-asset-item>
@@ -49,7 +49,7 @@
 	   
 	<a-marker type="barcode" value="4" smooth="smooth:true; smoothCount:1">
             	<a-entity position="0 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://www.degraf.ufpr.br/docentes/paulo/lightbox/maquetes/torres.html; title: VR; highlighted:true; backgroundColor:LightGray;"></a-entity>
-                <a-entity collada-model="#torres" scale="0.03 0.03 0.03" position="2 0 0"></a-entity>
+                <a-entity gltf-model="#torres" scale="0.03 0.03 0.03" position="2 0 0"></a-entity>
         </a-marker>
 	   
     </a-scene>
