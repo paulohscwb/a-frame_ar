@@ -9,7 +9,7 @@
 <body>
     <a-scene>
       <a-assets>
-		<a-asset-item id="modelo" src="./imagens/notre.glb"></a-asset-item>
+		<a-asset-item id="modelo" src="./imagens/notre.dae"></a-asset-item>
 		<a-mixin id="piso" geometry="primitive: box; height:0.15; width:8; depth:8;" 
 		 material="src:#piso1; side:double; repeat: 6 6; metalness:0.5; roughness:1" shadow></a-mixin>
 		<img id="ceu" src="imagens/ceu1.jpg">
@@ -23,7 +23,7 @@
 		<a-light type="ambient" intensity="1.3" color="grey"></a-light>
 	  
 		<a-entity position="0 -2 0">
-			<a-entity class="modelo" gltf-model="#modelo" position="0 0 0" scale="0.15 0.15 0.15"></a-entity>
+			<a-entity class="modelo" collada-model="#modelo" position="0 0 0" scale="0.15 0.15 0.15"></a-entity>
 		    <a-entity mixin="piso" position="0 0.03 0" visible="false"></a-entity>
 		</a-entity>
 
