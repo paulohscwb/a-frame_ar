@@ -13,8 +13,9 @@
         <a-assets>
             <a-asset-item id="catedral" src="./imagens/notre.dae"></a-asset-item>
             <a-asset-item id="torres" src="./imagens/torres.glb"></a-asset-item>
-	    <a-asset-item id="teste" src="./imagens/teste.glb"></a-asset-item>
+	    <a-asset-item id="cadeira1" src="./imagens/cadeira1.glb"></a-asset-item>
 	    <a-asset-item id="cadeira" src="./imagens/cadeira.glb"></a-asset-item>
+	    <a-asset-item id="teste" src="./imagens/teste.glb"></a-asset-item>
 	    <a-asset-item id="penteadeira" src="./imagens/penteadeira.glb"></a-asset-item>
 	    <a-asset-item id="aviao" src="./imagens/aviao.glb"></a-asset-item>
 	    <a-asset-item id="conjunto" src="./imagens/conjunto.glb"></a-asset-item>
@@ -37,6 +38,11 @@
 	<a-marker preset="kanji" smooth="smooth:true; smoothCount:1">
 		<a-entity position="0 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://paulohscwb.github.io/a-frame_ar/cadeira.html; title: VR; highlighted:true; backgroundColor:LightGray;"></a-entity>
 		<a-entity gltf-model="#cadeira" scale="3 3 3" position="1 0 0"></a-entity>
+        </a-marker>
+	
+	<a-marker type="barcode" value="7" smooth="smooth:true; smoothCount:1">
+		<a-entity position="0 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5" link="href: http://paulohscwb.github.io/a-frame_ar/cadeira1.html; title: VR; highlighted:true; backgroundColor:LightGray;"></a-entity>
+		<a-entity gltf-model="#cadeira1" scale="2 2 2" position="0.5 0 0"></a-entity>
         </a-marker>
 	
 	 <a-marker type="barcode" value="6" smooth="smooth:true; smoothCount:1">
